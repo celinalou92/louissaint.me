@@ -9,50 +9,32 @@ const merriweather = Merriweather({
 
 let theme = createTheme({
   palette: {
+    mode: "light",
     primary: {
-      main: "#FF7972",
+      main: '#1C1C1D"',
+      contrastText: "rgba(255,255,255,0.87)",
     },
     secondary: {
-      main: "#D6A23A",
+      main: "#FF7972",
     },
     info: {
-        main: "#fff"
+      main: "#fff",
     },
     divider: "#D6A23A",
+    text: {
+      primary: "#fff",
+      secondary: "#FF7972",
+      disabled: "#FF7972",
+    },
     background: {
-        paper: "#1C1C1D",
+      default: "#1C1C1D",
+      paper: "rgba(58,58,61,0.28)",
     }
   },
-});
-
-theme = createTheme(theme,{
   typography: {
-    fontFamily: merriweather.style.fontFamily,
-    // color: theme.palette.primary.main,
-    variant: {
-        h1: {
-            color: theme.palette.primary.main
-        },
-        h2: {
-            color: theme.palette.primary.main
-        },
-        h3: {
-            color: theme.palette.primary.main
-        },
-        h5: {
-            color: theme.palette.primary.main
-        },
-        h6: {
-            color: theme.palette.primary.main
-        },
-        body1: {
-            color: theme.palette.info.main
-        },
-    }
-  },
-  background: {
-    paper: theme.palette.secondary.main
+    fontFamily: "merriweather",
   }
 });
+
 
 export default theme;

@@ -12,44 +12,48 @@ import theme from './components/ThemeRegistry/theme';
 
 export default function Home() {
   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  const styleOverride = useTheme(theme)
   return (
     <>
-    <Box maxWidth="100vw">
+    <Box 
+    maxWidth="100vw"
+    sx={{
+      bgcolor: 'background.default',
+    }}
+    >
       <AppBar position="relative">
-        <Toolbar sx={{justifyContent:"space-between"}}>
-          <Typography variant="h4" noWrap sx={{letterSpacing: ".2rem"}}>
+        <Toolbar >
+          <Typography variant="h5" color="text.secondary" noWrap sx={{letterSpacing: ".2rem"}}>
             Louissaint
           </Typography>
-        <IconButton
+          <IconButton
             size="large"
-            edge="start"
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            <MenuIcon 
+            sx={{color: "text.secondary"}}
+            />
           </IconButton>
         </Toolbar>
       </AppBar>
         {/* Hero unit */}
         <Box
           sx={{
-            bgcolor: 'background.paper',
             pt: 8,
             pb: 6,
           }}
         >
           <Container maxWidth="sm">
             <Typography
-              // component="h1"
               variant="h1"
               align="center"
-              // color= "theme.pallet.primary.main"
+              color="text.primary" 
               gutterBottom
+              
             >
               Hi I'm Celina
             </Typography>
-            <Typography variant="h5" align="left" color="text" paragraph>
+            <Typography variant="h5" align="left" color="text.secondary"  paragraph>
             FRONT-END WEB DEVELOPER
             </Typography>
             <Stack
