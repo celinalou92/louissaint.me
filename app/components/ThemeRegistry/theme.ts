@@ -7,24 +7,52 @@ const merriweather = Merriweather({
   display: "swap",
 });
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
-    mode: "light",
+    primary: {
+      main: "#FF7972",
+    },
+    secondary: {
+      main: "#D6A23A",
+    },
+    info: {
+        main: "#fff"
+    },
+    divider: "#D6A23A",
+    background: {
+        paper: "#1C1C1D",
+    }
   },
+});
+
+theme = createTheme(theme,{
   typography: {
     fontFamily: merriweather.style.fontFamily,
+    // color: theme.palette.primary.main,
+    variant: {
+        h1: {
+            color: theme.palette.primary.main
+        },
+        h2: {
+            color: theme.palette.primary.main
+        },
+        h3: {
+            color: theme.palette.primary.main
+        },
+        h5: {
+            color: theme.palette.primary.main
+        },
+        h6: {
+            color: theme.palette.primary.main
+        },
+        body1: {
+            color: theme.palette.info.main
+        },
+    }
   },
-  components: {
-    MuiAlert: {
-      styleOverrides: {
-        root: ({ ownerState }) => ({
-          ...(ownerState.severity === "info" && {
-            backgroundColor: "#60a5fa",
-          }),
-        }),
-      },
-    },
-  },
+  background: {
+    paper: theme.palette.secondary.main
+  }
 });
 
 export default theme;
