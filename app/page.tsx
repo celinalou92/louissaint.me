@@ -7,6 +7,7 @@ import { Button } from '@mui/base';
 import { AppBar, Toolbar, Grid, CardMedia, CardContent, CardActions, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Stack } from '@mui/system';
+import { AboutMe } from './components/aboutMe/AboutMe';
 
 export default function Home() {
   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -65,6 +66,9 @@ export default function Home() {
             </Stack>
           </Container>
         </Box>
+          {/* About Me */}
+        <AboutMe/>
+          {/* End About Me */}
         <Container sx={{ py: 8, bgcolor: 'background.paper' }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
