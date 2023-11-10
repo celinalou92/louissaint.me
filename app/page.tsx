@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client"
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Container from '@mui/material/Container';
@@ -7,8 +6,7 @@ import Typography from '@mui/material/Typography';
 import { Button } from '@mui/base';
 import { AppBar, Toolbar, Grid, CardMedia, CardContent, CardActions, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Stack, useTheme } from '@mui/system';
-import theme from './components/ThemeRegistry/theme';
+import { Stack } from '@mui/system';
 
 export default function Home() {
   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -110,8 +108,6 @@ export default function Home() {
         <Typography
           variant="subtitle1"
           align="center"
-          // color="pallet.info.main"
-          // component="p"
         >
           Something here to give the footer a purpose!
         </Typography>
