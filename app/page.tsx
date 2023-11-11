@@ -17,6 +17,8 @@ export default function Home() {
     <>
       <Box
         maxWidth="100vw"
+        pr= "2rem"
+        pl= "2rem"
         sx={{
           bgcolor: 'background.default',
         }}

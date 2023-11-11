@@ -14,8 +14,6 @@ export const AboutMe = () => {
                 borderRadius: 2
             }}
         >
-
-
             <Typography
                 variant="h4"
                 align="center"
@@ -25,6 +23,7 @@ export const AboutMe = () => {
             </Typography>
             <Typography
                 align="center"
+                lineHeight="1.6"
                 >
                 My name is Celina Louissaint I am a Long Beach based developer and I build fully responsive websites for small businesses, projects and individuals. I have a wide skill set that includes graphic design, video editing, and coding (front end). I can build your site, design your logo and create graphics for your business from beginning to end.
             </Typography>

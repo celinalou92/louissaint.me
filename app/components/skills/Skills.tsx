@@ -1,11 +1,11 @@
-import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container, Divider } from "@mui/material";
+import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container, Divider, Box } from "@mui/material";
 
 
 export const Skills = ({ cards }: { cards?: Array<Number> }) => {
 
     return (
-        <>
-            <Container sx={{ py: 8 }} maxWidth="lg">
+        <Box>
+            <Container sx={{ py: 8 }} maxWidth="xl">
                 <Typography
                     variant="h3"
                     align="left"
@@ -27,7 +27,6 @@ export const Skills = ({ cards }: { cards?: Array<Number> }) => {
                                 <CardMedia
                                     component="div"
                                     sx={{
-                                        // 16:9
                                         pt: '56.25%',
                                     }}
                                     image="https://source.unsplash.com/random?wallpapers"
@@ -50,6 +49,6 @@ export const Skills = ({ cards }: { cards?: Array<Number> }) => {
                     ))}
                 </Grid>
             </Container>
-        </>
+        </Box>
     );
 };
