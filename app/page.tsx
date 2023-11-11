@@ -8,33 +8,34 @@ import { AppBar, Toolbar, Grid, CardMedia, CardContent, CardActions, IconButton 
 import MenuIcon from '@mui/icons-material/Menu';
 import { Stack } from '@mui/system';
 import { AboutMe } from './components/aboutMe/AboutMe';
+import { Skills } from './components/skills/Skills';
 
 export default function Home() {
   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <>
-    <Box 
-    maxWidth="100vw"
-    sx={{
-      bgcolor: 'background.default',
-    }}
-    >
-      <AppBar position="relative">
-        <Toolbar >
-          <Typography variant="h5" color="text.secondary" noWrap sx={{letterSpacing: ".2rem"}}>
-            Louissaint
-          </Typography>
-          <IconButton
-            size="large"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon 
-            sx={{color: "text.secondary"}}
-            />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
+      <Box
+        maxWidth="100vw"
+        sx={{
+          bgcolor: 'background.default',
+        }}
+      >
+        <AppBar position="relative">
+          <Toolbar >
+            <Typography variant="h5" color="text.secondary" noWrap sx={{ letterSpacing: ".2rem" }}>
+              Louissaint
+            </Typography>
+            <IconButton
+              size="large"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon
+                sx={{ color: "text.secondary" }}
+              />
+            </IconButton>
+          </Toolbar>
+        </AppBar>
         {/* Hero unit */}
         <Box
           sx={{
@@ -46,14 +47,14 @@ export default function Home() {
             <Typography
               variant="h1"
               align="center"
-              color="text.primary" 
+              color="text.primary"
               gutterBottom
-              
+
             >
               Hi I'm Celina
             </Typography>
-            <Typography variant="h5" align="left" color="text.secondary"  paragraph>
-            FRONT-END WEB DEVELOPER
+            <Typography variant="h5" align="left" color="text.secondary" paragraph>
+              FRONT-END WEB DEVELOPER
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -66,57 +67,28 @@ export default function Home() {
             </Stack>
           </Container>
         </Box>
-          {/* About Me */}
-        <AboutMe/>
-          {/* End About Me */}
-        <Container sx={{ py: 8, bgcolor: 'background.paper' }} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
-                    image="https://source.unsplash.com/random?wallpapers"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button  >View</Button>
-                    <Button >Edit</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
+        {/* About Me */}
+        <AboutMe />
+        {/* End About Me */}
 
-      {/* Footer */}
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-        <Typography variant="body1" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-        >
-          Something here to give the footer a purpose!
-        </Typography>
+          {/* End hero unit */}
+          {/*Skills Section*/}
+          <Skills cards={cards}/>
+          {/*End Skills Section*/}
+        {/* Footer */}
+        <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+          <Typography variant="body1" align="center" gutterBottom>
+            Footer
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+          >
+            Something here to give the footer a purpose!
+          </Typography>
+        </Box>
+        {/* End footer */}
       </Box>
-      {/* End footer */}
-      </Box>
-      </>
-  )}
+    </>
+  )
+}

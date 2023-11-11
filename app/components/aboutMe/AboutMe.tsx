@@ -10,7 +10,8 @@ export const AboutMe = () => {
                 mx: 20,
                 py: 12,
                 px: 8,
-                border: .2,
+                boxShadow: 3,
+                border: 1,
                 borderColor: 'divder.main',
                 borderRadius: 2
             }}
