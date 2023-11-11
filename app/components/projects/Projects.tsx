@@ -1,51 +1,56 @@
-import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container } from "@mui/material";
+import { Project } from "@/types/Project";
+import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container, Divider, Box } from "@mui/material";
 
 
-export const Projects = ({ cards }: { cards?: Array<Number> }) => {
+export const Projects = ( {projects=[] }: {projects : Array<Project>} ) => {
+    console.log("test",projects)
 
     return (
-        <>
-            <Container sx={{ py: 8 }} maxWidth="lg">
+        <Box>
+            <Container sx={{ py: 8 }} maxWidth="xl">
                 <Typography
                     variant="h3"
                     align="left"
                     color="text.primary"
-                    gutterBottom
+                    mb=".5rem"
                 >
-                    My Skill Set
+                    Projects
                 </Typography>
+                <Divider
+                />
+                <br/>
+                <br/>            
                 <Grid container spacing={4}>
-                    {cards.map((card: Number) => (
-                        <Grid item key={card} xs={12} sm={6} md={4}>
+                    {projects.map((project: Project) => (
+                        <Grid item key={project.name} xs={12} sm={6} md={4}>
                             <Card
-                                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                            variant="outlined"
+                                sx={{ borderRadius: "15px", height: "35rem", display: 'flex', flexDirection: 'column' }}
                             >
                                 <CardMedia
                                     component="div"
                                     sx={{
-                                        // 16:9
                                         pt: '56.25%',
                                     }}
                                     image="https://source.unsplash.com/random?wallpapers"
                                 />
                                 <CardContent sx={{ flexGrow: 1 }}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Heading
+                                        {project.name}
                                     </Typography>
                                     <Typography>
-                                        This is a media card. You can use this section to describe the
-                                        content.
+                                        {project.description}
                                     </Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button  >View</Button>
-                                    <Button >Edit</Button>
+                                    <Button  >{project.links}</Button>
+                                    <Button >{project.links}</Button>
                                 </CardActions>
                             </Card>
                         </Grid>
                     ))}
                 </Grid>
             </Container>
-        </>
+        </Box>
     );
 };

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Container, Typography, Stack, Divider } from "@mui/material";
 import { AboutMe } from "../aboutMe/AboutMe";
 
@@ -8,6 +9,8 @@ export const Hero = () => {
             sx={{
                 pt: 8,
                 pb: 6,
+                pr: 5,
+                pl: 4,
                 height: "80vh",
                 display: "flex", justifyContent: "center", flexDirection: "row", alignItems: "center"
             }}
