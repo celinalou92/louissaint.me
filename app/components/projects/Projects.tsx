@@ -1,7 +1,7 @@
-import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container, Divider } from "@mui/material";
+import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container } from "@mui/material";
 
 
-export const Skills = ({ cards }: { cards?: Array<Number> }) => {
+export const Projects = ({ cards }: { cards?: Array<Number> }) => {
 
     return (
         <>
@@ -10,14 +10,10 @@ export const Skills = ({ cards }: { cards?: Array<Number> }) => {
                     variant="h3"
                     align="left"
                     color="text.primary"
-                    mb=".5rem"
+                    gutterBottom
                 >
                     My Skill Set
                 </Typography>
-                <Divider
-                />
-                <br/>
-                <br/>            
                 <Grid container spacing={4}>
                     {cards.map((card: Number) => (
                         <Grid item key={card} xs={12} sm={6} md={4}>
