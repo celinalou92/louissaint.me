@@ -23,7 +23,7 @@ export const Projects = ( {projects }: {projects : Array<Project>} ) => {
                         <Grid item key={project.name} xs={12} sm={6} md={4}>
                             <Card
                             variant="outlined"
-                                sx={{ padding: "1.5em 2em", borderRadius: "15px", height: "35rem", display: 'flex', flexDirection: 'column' }}
+                                sx={{ height: "100%", borderRadius: "15px", display: 'flex', flexDirection: 'column' }}
                             >
                                 <CardMedia
                                     component="div"
@@ -42,9 +42,17 @@ export const Projects = ( {projects }: {projects : Array<Project>} ) => {
                                         {project.description}
                                     </Typography>
                                 </CardContent>
-                                <CardActions>
-                                    <Button  >{project.links}</Button>
-                                    <Button >{project.links}</Button>
+                                <CardActions 
+                                sx={{justifyContent:"center"}}
+                                >
+                                    <Button  
+                                    variant="outlined" 
+                                    href={project.links[0]}
+                                    color="secondary"
+                                    >
+                                        See Repo
+                                    </Button>
+                                    <Button variant="outlined" href={project.links[1]} color="secondary">See Live Site</Button>
                                 </CardActions>
                             </Card>
                         </Grid>
