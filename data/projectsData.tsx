@@ -1,11 +1,11 @@
-// import manageIt from "../public/projectImages/manage-it_screengrab.png"
-// import EXTRAvert from "../public/projectImages/EXTRAvert_screengrab.png";
-// import CCE from "../public/projectImages/CCE_screengrab.png";
-// import buddie from "../public/projectImages/buddie_screengrab.png";
-// import techBlog from "../public/projectImages/tech-blog_screengrab.png";
-// import weatherdash from "../public/projectImages/weatherdash_screengrab.png";
-// import trulia from "../public/projectImages/trulia_screengrab.png";
-// import gitItDone from "../public/projectImages/git-it-done_screengrab.png";
+import manageIt from "@/public/projectImages/manage-it_screengrab.png"
+import EXTRAvert from "@/public/projectImages/EXTRAvert_screengrab.png";
+import CCE from "@/public/projectImages/CCE_screengrab.png";
+import buddie from "@/public/projectImages/buddie_screengrab.png";
+import techBlog from "@/public/projectImages/tech-blog_screengrab.png";
+import weatherdash from "@/public/projectImages/weatherdash_screengrab.png";
+import trulia from "@/public/projectImages/trulia_screengrab.png";
+import gitItDone from "@/public/projectImages/git-it-done_screengrab.png";
 
 // Did you mean './/EXTRAvert_screengrab.png'?
 // Requests that should resolve in the current directory need to start with './'.
@@ -23,7 +23,7 @@ export const projectData = [
             "https://github.com/celinalou92/manage-it",
             "https://cryptic-bastion-04157.herokuapp.com/"
         ],
-        // image: manageIt.src,
+        image: manageIt.src,
         featured: true
     },
     {
@@ -34,7 +34,7 @@ export const projectData = [
             "https://github.com/celinalou92/EXTRAvert",
             "https://unity7.github.io/EXTRAvert/"
         ],
-        // image: EXTRAvert.src,
+        image: EXTRAvert.src,
         featured: true
     },
     {
@@ -45,7 +45,7 @@ export const projectData = [
             "https://github.com/celinalou92/buddie",
             "https://buddie-app.herokuapp.com/"
         ],
-        // image: buddie.src,
+        image: buddie.src,
         featured: true
     },
     {
@@ -56,7 +56,7 @@ export const projectData = [
             "https://github.com/celinalou92/CCE-Website",
             "https://celinalou92.github.io/CCE-Website/"
         ],
-        // image: CCE.src,
+        image: CCE.src,
         featured: true
     },
     {
@@ -67,7 +67,7 @@ export const projectData = [
             "https://github.com/celinalou92/tech-blog",
             "https://tech-blog-23may21.herokuapp.com/"
         ],
-        // image: techBlog.src,
+        image: techBlog.src,
         featured: false
     },
     {
@@ -78,7 +78,7 @@ export const projectData = [
             "https://celinalou92.github.io/weatherdash/",
             "https://github.com/celinalou92/weatherdash/"
         ],
-        // image: weatherdash.src,
+        image: weatherdash.src,
         featured: false
     },
     {
@@ -89,7 +89,7 @@ export const projectData = [
             "https://github.com/celinalou92/git-it-done",
             "https://celinalou92.github.io/git-it-done/"
         ],
-        // image: gitItDone.src,
+        image: gitItDone.src,
         featured: false
     },
     {
@@ -100,7 +100,7 @@ export const projectData = [
             "https://codepen.io/celinalou92/pen/MWwewWQ",
             ""
         ],
-        // image: trulia,
+        image: trulia,
         featured: false
     },
 ]

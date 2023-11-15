@@ -35,7 +35,7 @@ export const Projects = ( {projects }: {projects : Array<Project>, path: any} ) 
                                     sx={{
                                         pt: '56.25%',
                                     }}
-                                    image={"/projectImages/manage-it_screengrab.png"}
+                                    image={project.image}
                                 />
                                 <CardContent sx={{ flexGrow: 1 }}>
                                     <Typography gutterBottom variant="h5" component="h2">
