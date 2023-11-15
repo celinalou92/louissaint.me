@@ -1,13 +1,11 @@
-import { Project } from "@/types/Project";
 import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container, Divider, Box } from "@mui/material";
-import Image from "next/image";
+import {skills} from "@/data/skillList";
+import {Skills} from "@/types/Skills";
+import { Skill} from "@/types/Skill";
 
-export const Projects = ( {projects }: {projects : Array<Project>, path: any} ) => {
-    
-    // const createImageSRC = (projectObj) = {
-    //     return (<Image src={project.image} alt="me" width="64" height="64" />) 
-    // };
 
+export const SkillsList = ({ skills }: { skills?: Skills }) => {
+    const {dev, adobe} = skills;
     return (
         <Box>
             <Container sx={{ py: 8 }} maxWidth="xl">
@@ -17,41 +15,41 @@ export const Projects = ( {projects }: {projects : Array<Project>, path: any} ) 
                     color="text.primary"
                     mb=".5rem"
                 >
-                    Projects
+                    My Skill Set
                 </Typography>
                 <Divider
                 />
                 <br/>
                 <br/>            
                 <Grid container spacing={4}>
-                    {projects.map((project: Project) => (
-                        <Grid item key={project.name} xs={12} sm={6} md={4}>
+                    {dev.map((d: any) => (
+                        <Grid item key={d.name} xs={12} sm={6} md={4}>
                             <Card
-                            variant="outlined"
-                                sx={{ borderRadius: "15px", height: "35rem", display: 'flex', flexDirection: 'column' }}
+                                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                             >
                                 <CardMedia
                                     component="div"
                                     sx={{
                                         pt: '56.25%',
                                     }}
-                                    image={"/projectImages/manage-it_screengrab.png"}
+                                    image="https://source.unsplash.com/random?wallpapers"
                                 />
                                 <CardContent sx={{ flexGrow: 1 }}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        {project.name}
+                                        Heading
                                     </Typography>
                                     <Typography>
-                                        {project.description}
+                                        This is a media card. You can use this section to describe the
+                                        content.
                                     </Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button  >{project.links}</Button>
-                                    <Button >{project.links}</Button>
+                                    <Button  >View</Button>
+                                    <Button >Edit</Button>
                                 </CardActions>
                             </Card>
                         </Grid>
-                     ))}
+                    ))}
                 </Grid>
             </Container>
         </Box>
