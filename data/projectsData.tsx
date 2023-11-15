@@ -1,13 +1,17 @@
-// import manageIt from '';
-// import EXTRAvert from '';
-// import CCE from '';
-// import buddie from '';
+// import manageIt from "../public/projectImages/manage-it_screengrab.png"
+// import EXTRAvert from "../public/projectImages/EXTRAvert_screengrab.png";
+// import CCE from "../public/projectImages/CCE_screengrab.png";
+// import buddie from "../public/projectImages/buddie_screengrab.png";
+// import techBlog from "../public/projectImages/tech-blog_screengrab.png";
+// import weatherdash from "../public/projectImages/weatherdash_screengrab.png";
+// import trulia from "../public/projectImages/trulia_screengrab.png";
+// import gitItDone from "../public/projectImages/git-it-done_screengrab.png";
 
-// import techBlog from '';
-// import weatherdash from '';
-// import trulia from '';
-// import gitItDone from '';
-
+// Did you mean './/EXTRAvert_screengrab.png'?
+// Requests that should resolve in the current directory need to start with './'.
+// Requests that start with a name are treated as module requests and resolve within module directories (node_modules, /Users/celinalouissaint/Documents/devProjects/louissaint.me).
+// If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
+// > 1 | import manageIt from "/EXTRAvert_screengrab.png"
 
 
 export const projectData = [
@@ -19,7 +23,7 @@ export const projectData = [
             "https://github.com/celinalou92/manage-it",
             "https://cryptic-bastion-04157.herokuapp.com/"
         ],
-        // image: manageIt,
+        // image: manageIt.src,
         featured: true
     },
     {
@@ -30,7 +34,7 @@ export const projectData = [
             "https://github.com/celinalou92/EXTRAvert",
             "https://unity7.github.io/EXTRAvert/"
         ],
-        // image: EXTRAvert,
+        // image: EXTRAvert.src,
         featured: true
     },
     {
@@ -41,7 +45,7 @@ export const projectData = [
             "https://github.com/celinalou92/buddie",
             "https://buddie-app.herokuapp.com/"
         ],
-        // image: buddie,
+        // image: buddie.src,
         featured: true
     },
     {
@@ -52,7 +56,7 @@ export const projectData = [
             "https://github.com/celinalou92/CCE-Website",
             "https://celinalou92.github.io/CCE-Website/"
         ],
-        // image: CCE,
+        // image: CCE.src,
         featured: true
     },
     {
@@ -63,7 +67,7 @@ export const projectData = [
             "https://github.com/celinalou92/tech-blog",
             "https://tech-blog-23may21.herokuapp.com/"
         ],
-        // image: techBlog,
+        // image: techBlog.src,
         featured: false
     },
     {
@@ -74,7 +78,7 @@ export const projectData = [
             "https://celinalou92.github.io/weatherdash/",
             "https://github.com/celinalou92/weatherdash/"
         ],
-        // image: weatherdash,
+        // image: weatherdash.src,
         featured: false
     },
     {
@@ -85,7 +89,7 @@ export const projectData = [
             "https://github.com/celinalou92/git-it-done",
             "https://celinalou92.github.io/git-it-done/"
         ],
-        // image: gitItDone,
+        // image: gitItDone.src,
         featured: false
     },
     {

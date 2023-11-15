@@ -9,8 +9,10 @@ import { NavBar } from './components/navBar/Navbar';
 import { Projects } from './components/projects/Projects';
 import projectData from "../data/projectsData"
 
-export default function Home() {
 
+
+export default function Home() {
+  console.log()
   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <>

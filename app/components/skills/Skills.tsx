@@ -1,8 +1,10 @@
 import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container, Divider, Box } from "@mui/material";
 import skills from "../../../data/skillList";
+import {Skills} from "../../../types/Skills";
 
-export const Skills = ({ skills }: { skills?: Array<Number> }) => {
-    const {devArray, adobe} = skills;
+
+export const Skills = ({ skills }: { skills?: Skills }) => {
+    const {dev, adobe} = skills;
     return (
         <Box>
             <Container sx={{ py: 8 }} maxWidth="xl">
@@ -19,8 +21,8 @@ export const Skills = ({ skills }: { skills?: Array<Number> }) => {
                 <br/>
                 <br/>            
                 <Grid container spacing={4}>
-                    {devArray.map((dev: any) => (
-                        <Grid item key={dev.name} xs={12} sm={6} md={4}>
+                    {dev.map((d: any) => (
+                        <Grid item key={d.name} xs={12} sm={6} md={4}>
                             <Card
                                 sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                             >
