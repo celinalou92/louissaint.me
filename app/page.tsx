@@ -1,33 +1,31 @@
 /* eslint-disable react/no-unescaped-entities */
 import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { Skills } from './components/skills/Skills';
+import { SkillList } from './components/skillList/SkillsList';
 import { Hero } from './components/hero/Hero';
 import { NavBar } from './components/navBar/Navbar';
 import { Projects } from './components/projects/Projects';
 import projectData from "../data/projectsData"
+import { skillsListData } from '@/data/skillListData';
 
 
 
 export default function Home() {
-  console.log()
-  const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const { dev, adobe } = skillsListData;
   return (
     <>
-    <NavBar/>
+      <NavBar />
       <Box
         maxWidth="100vw"
-        pr= "2rem"
-        pl= "2rem"
+        pr="2rem"
+        pl="2rem"
         sx={{
           bgcolor: 'background.default',
         }}
       >
-        <Hero/>
-        {/* <Skills cards={cards} /> */}
-        <Projects projects={projectData}/>
+        <Hero />
+        <SkillList dev={dev} adobe={adobe} />
+        <Projects projects={projectData} />
         {/* Footer */}
         <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
           <Typography variant="body1" align="center" gutterBottom>

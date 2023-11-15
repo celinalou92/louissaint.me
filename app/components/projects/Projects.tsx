@@ -1,12 +1,7 @@
 import { Project } from "@/types/Project";
 import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container, Divider, Box } from "@mui/material";
-import Image from "next/image";
 
-export const Projects = ( {projects }: {projects : Array<Project>, path: any} ) => {
-    
-    // const createImageSRC = (projectObj) = {
-    //     return (<Image src={project.image} alt="me" width="64" height="64" />) 
-    // };
+export const Projects = ( {projects }: {projects : Array<Project>} ) => {
 
     return (
         <Box>
@@ -28,13 +23,15 @@ export const Projects = ( {projects }: {projects : Array<Project>, path: any} ) 
                         <Grid item key={project.name} xs={12} sm={6} md={4}>
                             <Card
                             variant="outlined"
-                                sx={{ borderRadius: "15px", height: "35rem", display: 'flex', flexDirection: 'column' }}
+                                sx={{ padding: "1.5em 2em", borderRadius: "15px", height: "35rem", display: 'flex', flexDirection: 'column' }}
                             >
                                 <CardMedia
                                     component="div"
                                     sx={{
                                         pt: '56.25%',
+                                        borderRadius: "15px 15px 0px 0px"
                                     }}
+                                    // @ts-ignore
                                     image={project.image}
                                 />
                                 <CardContent sx={{ flexGrow: 1 }}>

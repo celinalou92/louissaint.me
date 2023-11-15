@@ -1,6 +1,11 @@
-import { Skill } from "./Skill";
+import Skill from ".//Skill";
 
 export interface Skills {
     dev: Skill[];
     adobe: Skill[];
   }
+
+  export default Skills;
+
+
+  

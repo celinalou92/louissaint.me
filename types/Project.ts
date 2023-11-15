@@ -6,6 +6,6 @@ export interface Project {
   decription2: string;
   codepen?: string;
   links: string[];
-  image: string | StaticImageData;
+  image?: string | StaticImageData;
   featured: boolean;
 }

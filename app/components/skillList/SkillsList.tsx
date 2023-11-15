@@ -1,10 +1,8 @@
 import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container, Divider, Box } from "@mui/material";
-import skills from "../../../data/skillList";
-import {Skills} from "../../../types/Skills";
+import Skill from "@/types/Skill";
 
 
-export const Skills = ({ skills }: { skills?: Skills }) => {
-    const {dev, adobe} = skills;
+export const SkillList = ({ dev, adobe } : {dev: Skill[], adobe: Skill[]}) => {
     return (
         <Box>
             <Container sx={{ py: 8 }} maxWidth="xl">
