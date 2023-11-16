@@ -27,8 +27,14 @@ export const Hero = () => {
                     <Divider />
                 </Typography>
 
-                <Typography variant="h5" align="left" color="text.secondary" paragraph>
-                    FRONT-END WEB DEVELOPER
+                <Typography variant="h5" align="left" color="#9290A3" paragraph
+                    sx={{
+                        textTransform: "uppercase",
+                        letterSpacing: ".2rem",
+                        textShadow: "1px 1px 1px rgba(199, 81, 81, 0.8)"
+                    }}
+                >
+                    FULL-STACK WEB DEVELOPER
                 </Typography>
                 <Stack
                     sx={{ pt: 4 }}

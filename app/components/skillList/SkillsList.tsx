@@ -1,8 +1,14 @@
-import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Container, Divider, Box } from "@mui/material";
+import { Grid, Card, CardMedia, CardContent, Typography, Container, Divider, Box, Avatar } from "@mui/material";
+import Skills from "@/types/Skills";
 import Skill from "@/types/Skill";
+import Image from "next/image";
 
+export const SkillList = ({skillsListData} : {skillsListData: Skills}) => {
+    const {programming_languages, frameworks_libraries, methodologies, testing} = skillsListData.dev;
 
-export const SkillList = ({ dev, adobe } : {dev: Skill[], adobe: Skill[]}) => {
+    const {adobe, business} = skillsListData;
+
+    
     return (
         <Box>
             <Container sx={{ py: 8 }} maxWidth="xl">
@@ -16,37 +22,45 @@ export const SkillList = ({ dev, adobe } : {dev: Skill[], adobe: Skill[]}) => {
                 </Typography>
                 <Divider
                 />
-                <br/>
-                <br/>            
-                <Grid container spacing={4}>
-                    {dev.map((d: any) => (
-                        <Grid item key={d.name} xs={12} sm={6} md={4}>
-                            <Card
-                                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                            >
-                                <CardMedia
-                                    component="div"
-                                    sx={{
-                                        pt: '56.25%',
-                                    }}
-                                    image="https://source.unsplash.com/random?wallpapers"
-                                />
-                                <CardContent sx={{ flexGrow: 1 }}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Heading
-                                    </Typography>
-                                    <Typography>
-                                        This is a media card. You can use this section to describe the
-                                        content.
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Button  >View</Button>
-                                    <Button >Edit</Button>
-                                </CardActions>
-                            </Card>
-                        </Grid>
-                    ))}
+                <br />
+                <br />
+                <Grid container display="flex" flexDirection="row" alignItems="flex-start" justifyContent="space-between" spacing={3} padding={2}>
+                    <Grid item display="flex" flexDirection="column">
+                        <Typography gutterBottom variant="h5">Programming Languages</Typography>
+                        <Divider/>
+                        {programming_languages.map((pl: Skill) => (
+                                <Typography key={pl.name} gutterBottom variant="body1">
+                                    {pl.name}
+                                </Typography>
+                        ))}
+                    </Grid>
+                    <Grid item display="flex" flexDirection="column">
+                        <Typography gutterBottom variant="h5">Frameworks & Libraries</Typography>
+                        <Divider/>
+                        {frameworks_libraries.map((fw: Skill) => (
+                                <Typography key={fw.name} gutterBottom variant="body1">
+                                    {fw.name}
+                                </Typography>
+                        ))}
+                    </Grid>
+                    <Grid item display="flex" flexDirection="column">
+                        <Typography gutterBottom variant="h5">Methodologies</Typography>
+                        <Divider/>
+                        {methodologies.map((m: Skill) => (
+                                <Typography key={m.name} gutterBottom variant="body1">
+                                    {m.name}
+                                </Typography>
+                        ))}
+                    </Grid>
+                    <Grid item display="flex" flexDirection="column">
+                        <Typography gutterBottom variant="h5">Testing</Typography>
+                        <Divider/>
+                        {testing.map((t: Skill) => (
+                                <Typography key={t.name} gutterBottom variant="body1">
+                                    {t.name}
+                                </Typography>
+                        ))}
+                    </Grid>
                 </Grid>
             </Container>
         </Box>

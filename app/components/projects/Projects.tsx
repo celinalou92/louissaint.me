@@ -18,7 +18,7 @@ export const Projects = ( {projects }: {projects : Array<Project>} ) => {
                 />
                 <br/>
                 <br/>            
-                <Grid container spacing={4}>
+                <Grid container spacing={4} p={2}>
                     {projects.map((project: Project) => (
                         <Grid item key={project.name} xs={12} sm={6} md={4}>
                             <Card

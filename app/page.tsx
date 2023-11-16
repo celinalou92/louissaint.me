@@ -11,7 +11,6 @@ import { skillsListData } from '@/data/skillListData';
 
 
 export default function Home() {
-  const { dev, adobe } = skillsListData;
   return (
     <>
       <NavBar />
@@ -24,7 +23,7 @@ export default function Home() {
         }}
       >
         <Hero />
-        <SkillList dev={dev} adobe={adobe} />
+        <SkillList skillsListData={skillsListData} />
         <Projects projects={projectData} />
         {/* Footer */}
         <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
