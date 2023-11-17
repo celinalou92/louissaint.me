@@ -25,6 +25,7 @@ export default function Home() {
         <Hero />
         <SkillList skillsListData={skillsListData} />
         <Projects projects={projectData} />
+      </Box>
         {/* Footer */}
         <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
           <Typography variant="body1" align="center" gutterBottom>
@@ -38,7 +39,6 @@ export default function Home() {
           </Typography>
         </Box>
         {/* End footer */}
-      </Box>
     </>
   )
 }
