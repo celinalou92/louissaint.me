@@ -26,7 +26,7 @@ export const Footer = () => {
         },
     ]
     return (
-        <Box sx={{ bgcolor: 'background.default', p: 8 }} component="footer">
+        <Box id="footer" sx={{ bgcolor: 'background.default', p: 8 }} component="footer">
             <Typography variant="h5" align="left" margin="1em auto">
                 Contact Celina
             </Typography>

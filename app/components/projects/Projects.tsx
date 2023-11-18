@@ -4,7 +4,7 @@ import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, Co
 export const Projects = ( {projects }: {projects : Array<Project>} ) => {
 
     return (
-        <Box>
+        <Box id="projects">
             <Container sx={{ py: 8 }} maxWidth="xl">
                 <Typography
                     variant="h3"
