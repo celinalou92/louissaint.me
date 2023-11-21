@@ -1,21 +1,29 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Box, Container, Typography, Stack, Divider } from "@mui/material";
+import { Box, Container, Typography, Stack, Divider, Grid } from "@mui/material";
 import { AboutMe } from "../aboutMe/AboutMe";
 
 
 export const Hero = () => {
+
+    const mobile = { xs: 12, sm: 6, md: 4 };
+    const desktop = { sm: 6, md: 12 };
+
     return (
-        <Box
+        <Grid
+        alignItems="center"
+        justifyContent="center"
+            container
+            columnGap={8}
             sx={{
                 pt: 8,
                 pb: 6,
                 pr: 5,
                 pl: 4,
-                height: "80vh",
-                display: "flex", justifyContent: "center", flexDirection: "row", alignItems: "center"
             }}
         >
-            <Container sx={{ display: "flex", justifyContent: "center", flexDirection: "column" }} >
+            <Grid item
+
+            >
                 <Typography
                     variant="h1"
                     align="left"
@@ -36,17 +44,14 @@ export const Hero = () => {
                 >
                     FULL-STACK WEB DEVELOPER
                 </Typography>
-                <Stack
-                    sx={{ pt: 4 }}
-                    direction="row"
-                    spacing={2}
-                    justifyContent="center"
-                >
-                </Stack>
-            </Container>
-            <Container sx={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
+            </Grid>
+            <Grid
+                item
+
+            >
                 <AboutMe />
-            </Container>
-        </Box>
+            </Grid>
+        </Grid>
+
     );
 };

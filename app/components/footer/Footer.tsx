@@ -32,7 +32,7 @@ export const Footer = () => {
             </Typography>
             {contactData.map((contact) => (
                 <Stack key={contact.method} display="flex" direction={"row"}  alignItems="center" width="100%">
- 
+
                     <Button
                     href={contact.link} 
                     target="_blank"
