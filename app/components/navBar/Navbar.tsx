@@ -1,5 +1,6 @@
 import { AppBar, Toolbar, Typography, IconButton, Container, Button } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from "next/link";
 
 export const NavBar = () => {
     const flexRowCenterCenterEnd={ display: 'flex', flexDirection: "row", alignItems: "center",  justifyContent: "flex-end" }
@@ -11,9 +12,11 @@ export const NavBar = () => {
         <>
             <AppBar position="fixed">
                 <Toolbar sx={{display:flexRowCenterCenterEnd}}>
-                    <Typography variant="h4" color="text.secondary" sx={{ letterSpacing: ".2rem" }}>
-                        Louissaint
-                    </Typography>
+                    <Link href="/">
+                        <Typography variant="h4" color="text.secondary" sx={{ letterSpacing: ".2rem" }}>
+                            Louissaint
+                        </Typography>
+                    </Link>
                     <Container sx={{display:flexRowCenterCenterEnd}}>
                         <Button href="#projects"
                             sx={{ margin: "1rem", display: hideOnMoble}}

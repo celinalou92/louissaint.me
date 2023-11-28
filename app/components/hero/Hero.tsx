@@ -11,7 +11,7 @@ export const Hero = () => {
     return (
         <Grid
         alignItems="center"
-        justifyContent="center"
+        justifyContent="space-around"
             container
             columnGap={8}
             sx={{
@@ -21,9 +21,7 @@ export const Hero = () => {
                 pl: 4,
             }}
         >
-            <Grid item
-
-            >
+            <Grid item>
                 <Typography
                     variant="h1"
                     align="left"

@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeRegistry } from './components/ThemeRegistry/ThemeRegistry'
+import { NavBar } from './components/navBar/Navbar'
+import { Footer } from './components/footer/Footer'
 
 
 export const metadata: Metadata = {
@@ -14,7 +16,12 @@ export default function RootLayout(props: { children: any })  {
   return (
     <html lang="en">
       <body>
-        <ThemeRegistry options={{ key: 'mui' }}>{children}</ThemeRegistry>
+      
+        <ThemeRegistry options={{ key: 'mui' }}>
+        <NavBar />
+          {children}
+          <Footer />
+          </ThemeRegistry>
       </body>
     </html>
   );

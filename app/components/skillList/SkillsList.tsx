@@ -1,7 +1,6 @@
-import { Grid, Card, CardMedia, CardContent, Typography, Container, Divider, Box, Avatar } from "@mui/material";
+import { Grid, Typography, Container, Divider, Box } from "@mui/material";
 import Skills from "@/types/Skills";
 import Skill from "@/types/Skill";
-import Image from "next/image";
 
 export const SkillList = ({skillsListData} : {skillsListData: Skills}) => {
     const {programming_languages, frameworks_libraries, methodologies, testing} = skillsListData.dev;

@@ -7,11 +7,6 @@ import weatherdash from "@/public/projectImages/weatherdash_screengrab.png";
 import trulia from "@/public/projectImages/trulia_screengrab.png";
 import gitItDone from "@/public/projectImages/git-it-done_screengrab.png";
 
-// Did you mean './/EXTRAvert_screengrab.png'?
-// Requests that should resolve in the current directory need to start with './'.
-// Requests that start with a name are treated as module requests and resolve within module directories (node_modules, /Users/celinalouissaint/Documents/devProjects/louissaint.me).
-// If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
-// > 1 | import manageIt from "/EXTRAvert_screengrab.png"
 
 
 export const projectData = [
@@ -57,7 +52,7 @@ export const projectData = [
             "https://celinalou92.github.io/CCE-Website/"
         ],
         image: CCE.src,
-        featured: true
+        featured: false
     },
     {
         name: "Tech-Blog",
