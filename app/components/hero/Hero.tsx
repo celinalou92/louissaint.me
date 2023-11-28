@@ -10,10 +10,12 @@ export const Hero = () => {
 
     return (
         <Grid
+        flexDirection="row"
         alignItems="center"
         justifyContent="space-around"
             container
-            columnGap={8}
+            columnGap={2}
+            rowGap={2}
             sx={{
                 pt: 8,
                 pb: 6,
@@ -21,7 +23,7 @@ export const Hero = () => {
                 pl: 4,
             }}
         >
-            <Grid item>
+            <Grid item md={12} lg={6}>
                 <Typography
                     variant="h1"
                     align="left"
@@ -43,10 +45,7 @@ export const Hero = () => {
                     FULL-STACK WEB DEVELOPER
                 </Typography>
             </Grid>
-            <Grid
-                item
-
-            >
+            <Grid item  md={12} lg={4}>
                 <AboutMe />
             </Grid>
         </Grid>
