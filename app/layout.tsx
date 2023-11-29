@@ -15,9 +15,9 @@ export default function RootLayout(props: { children: any }) {
   const { children } = props;
   return (
     <html lang="en">
-      <NavBar />
       <ThemeRegistry options={{ key: 'mui' }}>
         <body>
+      <NavBar />
           <Toolbar />
           {children}
           <Footer />
