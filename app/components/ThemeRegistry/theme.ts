@@ -11,7 +11,7 @@ let theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: '#1C1C1D"',
+      main: '#1C1C1D',
       contrastText: "rgba(255,255,255,0.87)",
     },
     secondary: {

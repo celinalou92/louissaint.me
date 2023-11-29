@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Box from '@mui/material/Box';
 import { SkillList } from './components/skillList/SkillsList';
 import { Hero } from './components/hero/Hero';

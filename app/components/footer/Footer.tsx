@@ -1,8 +1,7 @@
-import { Box, Button, Stack, Typography, styled } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import { Span } from "next/dist/trace";
 
 
 export const Footer = () => {
@@ -33,10 +32,11 @@ export const Footer = () => {
             </Typography>
             <Stack width="100%">
                 {contactData.map((contact) => (
-                    <Box key={contact.method} >
+                    <Box key={contact.method} sx={{ display: "flex", flexDirection: "row" }}>
                         <Button
                             href={contact.link}
                             target="_blank"
+                            color="secondary"
                             startIcon={contact.icon}
                             size="large"
                             sx={{ display: "flex", flexDirection: "row" }}
@@ -46,8 +46,7 @@ export const Footer = () => {
                         <Button
                             href={contact.link}
                             target="_blank"
-
-                            color="secondary"
+                            color="info"
                         >
                             {contact.linkText}
                         </Button>

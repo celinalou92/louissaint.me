@@ -6,8 +6,12 @@ import Typography from '@mui/material/Typography';
 import { Menu, MenuItem } from '@mui/material';
 import { useState } from 'react';
 
+interface NavItem {
+  name: string,
+  link: string
+}
 
-export const DrawerAppBar = ({ navItems }: { navItems: Array<string> }) => {
+export const DrawerAppBar = ({ navItems }: { navItems: Array<NavItem> }) => {
 
   const hideOnDesktop = { md: "none", lg: "none", xl: "none" }
 
@@ -24,7 +28,7 @@ export const DrawerAppBar = ({ navItems }: { navItems: Array<string> }) => {
 
 
   return (
-    <Box sx={{ textAlign: 'center' }}>
+    <Box sx={{ display:hideOnDesktop, textAlign: 'center' }}>
       <IconButton
         id="basic-button"
         aria-controls={open ? 'basic-menu' : undefined}
@@ -52,9 +56,9 @@ export const DrawerAppBar = ({ navItems }: { navItems: Array<string> }) => {
       >
         {navItems.map((navItem) => (
           <MenuItem
-            key={navItem}
+            key={navItem.name}
           >
-            <Typography component="a" textAlign="center">{navItem}</Typography>
+            <Typography component="a" href={navItem.link} textAlign="center">{navItem.name}</Typography>
           </MenuItem>
         ))}
       </Menu>
