@@ -13,7 +13,7 @@ export const NavBar = () => {
     const navItems = [
         { name: "Home", link: "/" },
         { name: "Resume", link: "resume" },
-        { name: "Projects", link: "#projects" },
+        { name: "Projects", link: "/#projects" },
         { name: "Contact", link: "#footer" }
     ];
 
@@ -42,7 +42,9 @@ export const NavBar = () => {
                         >
                             {
                                 navItems.map((navItem) => (
+                                    
                                     <Button
+                                    component="a"
                                         key={navItem.name}
                                         href={navItem.link}
                                         color="secondary"
