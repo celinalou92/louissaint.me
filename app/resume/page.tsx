@@ -6,6 +6,7 @@ import CelinaResume2 from "/public/celina-resume-2.jpg";
 
 
 export default function Resume() {
+  const resumeShareLink = "https://drive.google.com/file/d/1y556staCVa_ou-41rKg2EucKTkH_1QxE/view?usp=sharing"
   return (
     <>
       <Box
@@ -17,7 +18,7 @@ export default function Resume() {
           bgcolor: 'background.default',
         }}
       >
-        <Button size="large" color="secondary" variant="outlined">Download Celina's Resume</Button>
+        <Button target="_blank" href={resumeShareLink} size="large" color="secondary" variant="outlined">Download Celina's Resume</Button>
         <Stack  
           margin="2rem"
         >
@@ -25,7 +26,7 @@ export default function Resume() {
           align="center"
           sx={{ justifyContent:"center", alignItems:"center"}}
           target="_blank"
-            href={"https://drive.google.com/file/d/1jq4uc0kEysnk1wdZsgVQudXaudCoo_ff/view?usp=sharing"}>
+            href={resumeShareLink}>
             <Image alt="Celina's Resume Image" src={CelinaResume1} />
             <Image alt="Celina's Resume Image" src={CelinaResume2} />
           </Link>
