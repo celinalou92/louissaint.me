@@ -11,9 +11,9 @@ export const NavBar = () => {
     const hideOnMoble = { xs: "none", sm: 'none', md: "flex" };
 
     const navItems = [
-        { name: "Home", link: "/" },
-        { name: "Resume", link: "/resume" },
-        { name: "Projects", link: "/#projects" },
+        { name: "Home", link: "" },
+        { name: "Resume", link: "resume" },
+        { name: "Projects", link: "#projects" },
         { name: "Contact", link: "#footer" }
     ];
 
