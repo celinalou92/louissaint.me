@@ -6,7 +6,7 @@ import CelinaResume2 from "/public/celina-resume-2.jpg";
 
 
 export default function Resume() {
-  const resumeShareLink = "https://drive.google.com/file/d/1y556staCVa_ou-41rKg2EucKTkH_1QxE/view?usp=sharing"
+  const resumeShareLink = "https://drive.google.com/file/d/180h6f1ewEGQYlxbc0BYQGzM15SKABF3S/view?usp=drive_link"
   return (
     <>
       <Box
