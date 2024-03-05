@@ -38,7 +38,7 @@ export const projectData = [
         decription2: "HTML, CSS, JavaScript, Node.js, Express, React, MongoDB, GraphQL",
         links: [
             "https://github.com/celinalou92/buddie",
-            "https://buddie-app.herokuapp.com/"
+            "https://buddie-inky.vercel.app/"
         ],
         image: buddie.src,
         featured: true
