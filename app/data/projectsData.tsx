@@ -19,7 +19,7 @@ export const projectData = [
             "https://cryptic-bastion-04157.herokuapp.com/"
         ],
         image: manageIt.src,
-        featured: true
+        featured: false
     },
     {
         name: "EXTRAvert",
@@ -30,7 +30,7 @@ export const projectData = [
             "https://unity7.github.io/EXTRAvert/"
         ],
         image: EXTRAvert.src,
-        featured: true
+        featured: false
     },
     {
         name: "Buddie",
