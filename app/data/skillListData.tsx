@@ -8,83 +8,89 @@ import premeireProLogo from '@/public/icons/premeireProLogo.png';
 
 export const skillsListData: Skills = {
     dev: {
-            programming_languages: [
-                {
-                    name: "HTML",
-                    // image: htmlShield,
-                    star: 5
-                },
-                {
-                    name: "CSS",
-                    // image: cssShield,
-                    star: 4
-                },
-                {
-                    name: "JavaScript",
-                    // image: javascriptShield,
-                    star: 4
-                },
-                {
-                    name: "Java",
-                    // image: bootstrapShield,
-                    star: 2
-                },
-            ],
-            frameworks_libraries: [
-                {
-                    name: "React.js",
-                    // image: bootstrapShield,
-                    star: 4
-                },
-                {
-                    name: "Next.js",
-                    // image: bootstrapShield,
-                    star: 4
-                },
-                {
-                    name: "Node",
-                    // image: bootstrapShield,
-                    star: 4
-                },
-                {
-                    name: "Express",
-                    // image: bootstrapShield,
-                    star: 4
-                },
-                {
-                    name: "Typescript",
-                    // image: bootstrapShield,
-                    star: 4
-                },
-            ],
-            testing: [
-                {
-                    name: "Jest"
-                },
-                {
-                    name: "React Testing Library"
-                },
-                {
-                    name: "JUnit"
-                },
-                {
-                    name: "Mockito"
-                },
-            ],
-            methodologies: [
-                {
-                    name: "Agile"
-                },
-                {
-                    name: "Kanban"
-                },
-                {
-                    name: "CI /CD"
-                },
-                {
-                    name: "TDD"
-                },
-            ]
+        certifications: [
+           {
+            name:  "AWS Certified Cloud Practitioner",
+            star: 5
+           }
+        ],
+        programming_languages: [
+            {
+                name: "HTML",
+                // image: htmlShield,
+                star: 5
+            },
+            {
+                name: "CSS",
+                // image: cssShield,
+                star: 4
+            },
+            {
+                name: "JavaScript",
+                // image: javascriptShield,
+                star: 4
+            },
+            {
+                name: "Java/SpringBoot",
+                // image: bootstrapShield,
+                star: 2
+            },
+        ],
+        frameworks_libraries: [
+            {
+                name: "React.js",
+                // image: bootstrapShield,
+                star: 4
+            },
+            {
+                name: "Next.js",
+                // image: bootstrapShield,
+                star: 4
+            },
+            {
+                name: "Node",
+                // image: bootstrapShield,
+                star: 4
+            },
+            {
+                name: "Express",
+                // image: bootstrapShield,
+                star: 4
+            },
+            {
+                name: "Typescript",
+                // image: bootstrapShield,
+                star: 4
+            },
+        ],
+        testing: [
+            {
+                name: "Jest"
+            },
+            {
+                name: "React Testing Library"
+            },
+            {
+                name: "JUnit"
+            },
+            {
+                name: "Mockito"
+            },
+        ],
+        methodologies: [
+            {
+                name: "Agile"
+            },
+            {
+                name: "Kanban"
+            },
+            {
+                name: "CI /CD"
+            },
+            {
+                name: "TDD"
+            },
+        ]
     },
     adobe: [
         {

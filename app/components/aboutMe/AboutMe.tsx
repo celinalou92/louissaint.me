@@ -25,7 +25,7 @@ export const AboutMe = () => {
                 align="center"
                 lineHeight="1.6"
                 >
-                My name is Celina Louissaint I am a Long Beach based developer with a passion for learning new and emerging technologies. Specializing in Front-End Development with React, I have experience working with Next.js, Typescript, and Java/Spring Boot. My approach is guided by agile delivery practices such as practicing pairing, test driven development, and striving for the smallest possible feedback loop with stakeholders.
+                My name is Celina Louissaint I am a Long Beach based Full Stack developer with a passion for learning new and emerging technologies. Specializing in Front-End Development with React, I have experience working with Next.js, Typescript, and Java/Spring Boot. I am dedicated to ensuring efficient and collaborative project execution through agile methodologies.
             </Typography>
         </Box>
     )

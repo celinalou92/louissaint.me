@@ -6,10 +6,43 @@ import techBlog from "@/public/projectImages/tech-blog_screengrab.png";
 import weatherdash from "@/public/projectImages/weatherdash_screengrab.png";
 import trulia from "@/public/projectImages/trulia_screengrab.png";
 import gitItDone from "@/public/projectImages/git-it-done_screengrab.png";
-
+import vibbinbeads from "@/public/projectImages/vibinbeadsbybb.png"
+import alphoto from "@/public/projectImages/alphoto.jpeg"
 
 
 export const projectData = [
+    {
+        name: "Buddie",
+        description: "A Social Media Full Stack Application",
+        decription2: "HTML, CSS, JavaScript, Node.js, Express, React, MongoDB, GraphQL",
+        links: [
+            "https://github.com/celinalou92/buddie",
+            "https://buddie-inky.vercel.app/"
+        ],
+        image: buddie.src,
+        featured: true
+    },
+    {
+        name: "Vibbin Beads By BB",
+        description: "A website for a beaded jewelry business.",
+        decription2: "Next.js, Typescript, MUI, Vercel",
+        links: [
+            "https://github.com/celinalou92/vibbinbeadsbybb",
+            "https://vibinbeadsbybb.louissaint.me/"
+        ],
+        image: vibbinbeads.src,
+        featured: true
+    },
+    {
+        name: "Amanda Lynn Photography",
+        description: "A portfolio website for a photography and videography business. Live site no longer available, please see the clips from the client demo.",
+        decription2: "Redesigned and developed client’s website with custom CSS modules and ensured mobile responsiveness.",
+        links: [
+            "https://vimeo.com/941462996?share=copy"
+        ],
+        image: alphoto.src,
+        featured: true
+    },
     {
         name: "Manage-It",
         description: "A Task Manager, Full-Stack Application",
@@ -31,17 +64,6 @@ export const projectData = [
         ],
         image: EXTRAvert.src,
         featured: false
-    },
-    {
-        name: "Buddie",
-        description: "A Social Media Full Stack Application",
-        decription2: "HTML, CSS, JavaScript, Node.js, Express, React, MongoDB, GraphQL",
-        links: [
-            "https://github.com/celinalou92/buddie",
-            "https://buddie-inky.vercel.app/"
-        ],
-        image: buddie.src,
-        featured: true
     },
     {
         name: "CCE Landing Page",
