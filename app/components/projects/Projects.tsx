@@ -25,10 +25,11 @@ const getButtons = (project: Project) => {
             </>
         ) : (
             <Button
+                target="_blank"
+                rel="noreferrer"
                 variant="outlined"
                 href={project.links[0]}
                 color="secondary"
-
             >
                 See Demo on Vimeo
             </Button>

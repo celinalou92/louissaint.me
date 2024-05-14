@@ -15,7 +15,7 @@ export const Footer = () => {
         {
             method: "Github",
             linkText: "github.com/celinalou92",
-            link: "https://malito:celinalou92",
+            link: "https://github.com/celinalou92",
             icon: <GitHubIcon />,
         },
         {
@@ -37,6 +37,8 @@ export const Footer = () => {
                     {contactData.map((contact) => (
                         <Stack key={contact.method} display="flex" flexDirection="row">
                             <Button
+                                target="_blank"
+                                rel="noreferrer"
                                 href={contact.link}
                                 color="secondary"
                                 startIcon={contact.icon}
@@ -45,6 +47,8 @@ export const Footer = () => {
                                 {contact.method}:
                             </Button>
                             <Button
+                                target="_blank"
+                                rel="noreferrer"
                                 href={contact.link}
                                 color="info"
                             >
@@ -53,7 +57,10 @@ export const Footer = () => {
                         </Stack>
                     ))}
                 </Stack>
-                <Button rel="noreferrer" variant="outlined" color="secondary" href="https://drive.google.com/file/d/1lOMkfjbUqTdxuw2p4fIH7lGdyPxdCEe5/view?usp=sharing">
+                <Button
+                    target="_blank"
+                    rel="noreferrer"
+                    variant="outlined" color="secondary" href="https://drive.google.com/file/d/1lOMkfjbUqTdxuw2p4fIH7lGdyPxdCEe5/view?usp=sharing">
                     View Resume
                 </Button>
             </Stack>
