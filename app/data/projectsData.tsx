@@ -14,7 +14,7 @@ export const projectData = [
     {
         name: "Buddie",
         description: "A Social Media Full Stack Application",
-        decription2: "HTML, CSS, JavaScript, Node.js, Express, React, MongoDB, GraphQL",
+        description2: "HTML, CSS, Typescript, Node.js, Express, React, MongoDB, GraphQL",
         links: [
             "https://github.com/celinalou92/buddie",
             "https://buddie-inky.vercel.app/"
@@ -24,8 +24,8 @@ export const projectData = [
     },
     {
         name: "Vibbin Beads By BB",
-        description: "A website for a beaded jewelry business.",
-        decription2: "Next.js, Typescript, MUI, Vercel",
+        description: "A landing page for a beaded jewelry business.",
+        description2: "Next.js, Typescript, MUI, Vercel",
         links: [
             "https://github.com/celinalou92/vibbinbeadsbybb",
             "https://vibinbeadsbybb.louissaint.me/"
@@ -35,8 +35,8 @@ export const projectData = [
     },
     {
         name: "Amanda Lynn Photography",
-        description: "A portfolio website for a photography and videography business. Live site no longer available, please see the clips from the client demo.",
-        decription2: "Redesigned and developed client’s website with custom CSS modules and ensured mobile responsiveness.",
+        description: "A portfolio website for a photography and videography business. ",
+        description2: "Redesigned and developed client’s website with custom CSS modules and ensured mobile responsiveness.Live site no longer available, please see the clips from the client demo.",
         links: [
             "https://vimeo.com/941462996?share=copy"
         ],
@@ -46,7 +46,7 @@ export const projectData = [
     {
         name: "Manage-It",
         description: "A Task Manager, Full-Stack Application",
-        decription2: "HTML, CSS, Bootstrap, Javascript, Node.js, Sequalize, Handlebars, Twilio API",
+        description2: "HTML, CSS, Bootstrap, Javascript, Node.js, Sequalize, Handlebars, Twilio API",
         links: [
             "https://github.com/celinalou92/manage-it",
             "https://cryptic-bastion-04157.herokuapp.com/"
@@ -57,7 +57,7 @@ export const projectData = [
     {
         name: "EXTRAvert",
         description: "An Event Decision, Front-End Application",
-        decription2: "HTML, CSS, Bulma CSS, Javascript, JQuery, Ticketmaster and Skyscanner API",
+        description2: "HTML, CSS, Bulma CSS, Javascript, JQuery, Ticketmaster and Skyscanner API",
         links: [
             "https://github.com/celinalou92/EXTRAvert",
             "https://unity7.github.io/EXTRAvert/"
@@ -67,7 +67,7 @@ export const projectData = [
     },
     {
         name: "CCE Landing Page",
-        description: "A Landing Page, Front-End Website",
+        description2: "A Landing Page, Front-End Website",
         decription2: "HTML, CSS, Mobile Responsive Design, Bootstrap, JavaScript",
         links: [
             "https://github.com/celinalou92/CCE-Website",
@@ -79,7 +79,7 @@ export const projectData = [
     {
         name: "Tech-Blog",
         description: "A Full-Stack Blog App",
-        decription2: "",
+        description2: "",
         links: [
             "https://github.com/celinalou92/tech-blog",
             "https://tech-blog-23may21.herokuapp.com/"
@@ -90,7 +90,7 @@ export const projectData = [
     {
         name: "Weather App",
         description: "A Front-End Forecast App",
-        decription2: "",
+        description2: "",
         links: [
             "https://celinalou92.github.io/weatherdash/",
             "https://github.com/celinalou92/weatherdash/"
@@ -101,7 +101,7 @@ export const projectData = [
     {
         name: "Git-it-Done!",
         description: "A Front-End Github API Search App",
-        decription2: "",
+        description2: "",
         links: [
             "https://github.com/celinalou92/git-it-done",
             "https://celinalou92.github.io/git-it-done/"
@@ -112,7 +112,7 @@ export const projectData = [
     {
         name: "Trulia Recreation",
         description: "A Front-End Recreation",
-        decription2: "",
+        description2: "",
         links: [
             "https://codepen.io/celinalou92/pen/MWwewWQ",
             ""

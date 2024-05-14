@@ -12,8 +12,8 @@ export const NavBar = () => {
 
     const navItems = [
         { name: "Home", link: "/" },
-        { name: "Resume", link: "resume" },
         { name: "Projects", link: "/#projects" },
+        { name: "Resume", link: "/#footer" },
         { name: "Contact", link: "/#footer" }
     ];
 
