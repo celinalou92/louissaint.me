@@ -24,14 +24,6 @@ export default function RootLayout(props: { children: any }) {
                 item
                 md={6}
                 sm={12}
-                sx={{
-                  height:"100vh",
-                  pt: 20,
-                  pb: 6,
-                  pl: 4,
-                  pr: 4
-                }}
-                alignContent={"center"}
               >
                 {children}
               </Grid>

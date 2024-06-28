@@ -14,7 +14,7 @@ export const NavBar = () => {
     <>
       {navItems.map((navItem) => (
         <Link style={{paddingBottom:"1rem"}} key={navItem.name} href={navItem.link}>
-          <Typography letterSpacing="1px" color="secondary">
+          <Typography variant={"h6"} letterSpacing="1px" color="secondary">
             {navItem.name}
           </Typography>
         </Link>

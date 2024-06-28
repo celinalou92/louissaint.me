@@ -24,12 +24,23 @@ export const Contact = () => {
   ];
   return (
     <Stack>
-        <br/>
-        <Typography>Contact Me:</Typography>
+      <br />
+      <Typography variant="h6">Contact Me:</Typography>
       {contactData.map((contact) => (
-        <Stack key={contact.linkText} display="flex" flexDirection="row" alignItems="center" paddingBottom="3px">
+        <Stack
+          key={contact.linkText}
+          display="flex"
+          flexDirection="row"
+          alignItems="center"
+          paddingBottom="3px"
+        >
           {contact.icon}
-          <Link style={{paddingLeft:"2%"}} target="_blank" rel="noreferrer" href={contact.link}>
+          <Link
+            style={{ paddingLeft: "2%" }}
+            target="_blank"
+            rel="noreferrer"
+            href={contact.link}
+          >
             <Typography>{contact.linkText}</Typography>
           </Link>
         </Stack>
