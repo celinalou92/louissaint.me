@@ -1,32 +1,25 @@
-import Box from '@mui/material/Box';
-import { SkillList } from './components/skillList/SkillsList';
-import { Hero } from './components/hero/Hero';
-import { Projects } from './components/projects/Projects';
-import projectData from "./data/projectsData"
-import { skillsListData } from '@/app/data/skillListData';
-
-
+import Box from "@mui/material/Box";
+import { SkillList } from "./components/skillList/SkillsList";
+import { Projects } from "./components/Projects/Projects";
+import projectData from "./data/projectsData";
+import { Stack } from "@mui/material";
+import { AboutMe } from "./components/AboutMe/AboutMe";
+import { Footer } from "./components/Footer/Footer";
 
 export default function Home() {
-
-const featuredProjects = projectData.filter((projectData) => {
-  return projectData.featured === true;
-});
+  const featuredProjects = projectData.filter((projectData) => {
+    return projectData.featured === true;
+  });
 
   return (
-    <>
-      <Box
-        maxWidth="100vw"
-        pr="2rem"
-        pl="2rem"
-        sx={{
-          bgcolor: 'background.default',
-        }}
+      <Stack 
+      overflow={"scroll"} 
+      alignContent={"center"}
       >
-        <Hero />
-        <SkillList skillsListData={skillsListData} />
+        <AboutMe />
+        {/* <SkillList skillsListData={skillsListData} />  */}
         <Projects projects={featuredProjects} />
-      </Box>
-    </>
-  )
+        {/* <Footer /> */}
+      </Stack>
+  );
 }

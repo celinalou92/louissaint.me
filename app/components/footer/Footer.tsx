@@ -1,69 +1,39 @@
 import { Box, Button, Divider, Stack, Typography } from "@mui/material";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import Link from "next/link";
 
 export const Footer = () => {
-    const contactData = [
-        {
-            method: "Email",
-            linkText: "celinalouissaint@gmail.com",
-            link: "mailto:celinalouissaint@gmail.com",
-            icon: <MailOutlineIcon />,
-        },
-        {
-            method: "Github",
-            linkText: "github.com/celinalou92",
-            link: "https://github.com/celinalou92",
-            icon: <GitHubIcon />,
-        },
-        {
-            method: "LinkedIn",
-            linkText: "linkedin.com/in/louissaint-c",
-            link: "https://linkedin.com/in/louissaint-c",
-            icon: <LinkedInIcon />,
-        },
-    ]
-    return (
-        <Box id="footer" sx={{ bgcolor: 'background.default', p: 8 }} component="footer" paddingY="20px">
-            <Typography variant="h4" margin="1em auto" textAlign={"center"}>
-                Contact Celina
-            </Typography>
-            <Divider />
-            <br />
-            <Stack display={"flex"} alignItems={"center"} flexDirection={"row"} justifyContent={"space-evenly"}>
-                <Stack >
-                    {contactData.map((contact) => (
-                        <Stack key={contact.method} display="flex" flexDirection="row">
-                            <Button
-                                target="_blank"
-                                rel="noreferrer"
-                                href={contact.link}
-                                color="secondary"
-                                startIcon={contact.icon}
-                                size="large"
-                            >
-                                {contact.method}:
-                            </Button>
-                            <Button
-                                target="_blank"
-                                rel="noreferrer"
-                                href={contact.link}
-                                color="info"
-                            >
-                                {contact.linkText}
-                            </Button>
-                        </Stack>
-                    ))}
-                </Stack>
-                <Button
-                    target="_blank"
-                    rel="noreferrer"
-                    variant="outlined" color="secondary" href="https://drive.google.com/file/d/1lOMkfjbUqTdxuw2p4fIH7lGdyPxdCEe5/view?usp=sharing">
-                    View Resume
-                </Button>
-            </Stack>
-        </Box>
-    );
-};      
+  const contactData = [
+    {
+      linkText: "celinalouissaint@gmail.com",
+      link: "mailto:celinalouissaint@gmail.com",
+      icon: <MailOutlineIcon color="secondary" />,
+    },
+    {
+      linkText: "github.com/celinalou92",
+      link: "https://github.com/celinalou92",
+      icon: <GitHubIcon color="secondary" />,
+    },
+    {
+      linkText: "linkedin.com/in/louissaint-c",
+      link: "https://linkedin.com/in/louissaint-c",
+      icon: <LinkedInIcon color="secondary" />,
+    },
+  ];
+  return (
+    <Stack>
+        <br/>
+        <Typography variant="h6">Contact Me:</Typography>
+      {contactData.map((contact) => (
+        <Stack key={contact.linkText} display="flex" flexDirection="row"paddingBottom="3px">
+          {contact.icon}
+          <Link style={{paddingLeft:"2%"}} target="_blank" rel="noreferrer" href={contact.link}>
+            <Typography>{contact.linkText}</Typography>
+          </Link>
+        </Stack>
+      ))}
+    </Stack>
+  );
+};

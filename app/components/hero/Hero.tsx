@@ -1,54 +1,40 @@
-/* eslint-disable react/no-unescaped-entities */
-import { Box, Container, Typography, Stack, Divider, Grid } from "@mui/material";
-import { AboutMe } from "../aboutMe/AboutMe";
-
+"use client";
+import { Typography, Stack} from "@mui/material";
+import { NavBar } from "../NavBar/Navbar";
+import { Footer } from "../Footer/Footer";
 
 export const Hero = () => {
-
-    const mobile = { xs: 12, sm: 6, md: 4 };
-    const desktop = { sm: 6, md: 12 };
-
-    return (
-        <Grid
-        flexDirection="row"
-        alignItems="center"
-        justifyContent="space-around"
-            container
-            columnGap={2}
-            rowGap={2}
-            sx={{
-                pt: 8,
-                pb: 6,
-                pr: 5,
-                pl: 4,
-            }}
-        >
-            <Grid item md={12} lg={6}>
-                <Typography
-                    variant="h1"
-                    align="left"
-                    color="text.primary"
-                    gutterBottom
-
-                >
-                    Hi I'm Celina
-                    <Divider />
-                </Typography>
-
-                <Typography variant="h5" align="left" color="#9290A3" paragraph
-                    sx={{
-                        textTransform: "uppercase",
-                        letterSpacing: ".2rem",
-                        textShadow: "1px 1px 1px rgba(199, 81, 81, 0.8)"
-                    }}
-                >
-                    FULL-STACK WEB DEVELOPER
-                </Typography>
-            </Grid>
-            <Grid item  md={12} lg={4}>
-                <AboutMe />
-            </Grid>
-        </Grid>
-
-    );
+  return (
+    <Stack
+      width={"35vw"}
+      position={"fixed"}
+      sx={{
+        pt: 20,
+        pb: 6,
+        pl: 4,
+      }}
+    >
+      <Typography
+        variant="h2"
+        color="text.primary"
+        sx={{ letterSpacing: ".2rem", borderBottom: "1px solid #D6A23A" }}
+        gutterBottom
+      >
+        Hi I'm Celina
+      </Typography>
+      <Typography
+        align="left"
+        variant="body1"
+        paragraph
+        sx={{
+          height: "100%",
+        }}
+      >
+        I am a Long Beach based Web Developer with a passion for learning new
+        and emerging technologies.
+      </Typography>
+      <NavBar />
+      <Footer/>
+    </Stack>
+  );
 };

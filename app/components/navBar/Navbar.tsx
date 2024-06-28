@@ -1,68 +1,24 @@
-"use client"
-import { AppBar, Toolbar, Typography, Container, Button, ThemeProvider } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import Link from "next/link";
-import { DrawerAppBar } from "./NavDrawer";
-import theme from "../ThemeRegistry/theme";
 
 export const NavBar = () => {
-    const flexRowCenterCenterEnd = 
-    { display: 'flex', flexDirection: "row", alignItems: "center", justifyContent: "flex-end" }
+  const hideOnMoble = { xs: "none", sm: "none", md: "flex" };
 
-    const hideOnMoble = { xs: "none", sm: 'none', md: "flex" };
+  const navItems = [
+    { name: "About", link: "/#about" },
+    { name: "Skills", link: "/#skills" },
+    { name: "Portfolio", link: "/#projects" }
+  ];
 
-    const navItems = [
-        { name: "Home", link: "/" },
-        { name: "Projects", link: "/#projects" },
-        { name: "Resume", link: "/#footer" },
-        { name: "Contact", link: "/#footer" }
-    ];
-
-    return (
-        <>
-            <ThemeProvider theme={theme}>
-                <AppBar 
-                elevation={0} 
-                sx={{
-                    bgcolor: 'background.default', px: 4,
-                    py: 2,
-
-                }}
-                >
-                    <Toolbar >
-                        <Link href="/">
-                            <Typography variant="h4" color="text.secondary" sx={{ letterSpacing: ".2rem" }}>
-                                Louissaint
-                            </Typography>
-                        </Link>
-                        <Container
-                        maxWidth="xl"
-                            sx={{
-                                display: flexRowCenterCenterEnd
-                            }}
-                        >
-                            {
-                                navItems.map((navItem) => (
-                                    
-                                    <Button
-                                    component="a"
-                                        key={navItem.name}
-                                        href={navItem.link}
-                                        color="secondary"
-                                        sx={{
-                                            marginLeft: "1rem", display: hideOnMoble
-                                        }}
-                                    >
-                                        {navItem.name}
-                                    </Button>
-                                ))
-                            }
-                        </Container>
-                        <DrawerAppBar
-                            navItems={navItems}
-                        />
-                    </Toolbar>
-                </AppBar>
-            </ThemeProvider>
-        </>
-    );
+  return (
+    <>
+      {navItems.map((navItem) => (
+        <Link key={navItem.name} href={navItem.link}>
+          <Typography letterSpacing="1px" color="secondary">
+            {navItem.name}
+          </Typography>
+        </Link>
+      ))}
+    </>
+  );
 };
