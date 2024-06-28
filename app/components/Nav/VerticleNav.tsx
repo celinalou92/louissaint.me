@@ -13,7 +13,7 @@ export const NavBar = () => {
   return (
     <>
       {navItems.map((navItem) => (
-        <Link key={navItem.name} href={navItem.link}>
+        <Link style={{paddingBottom:"1rem"}} key={navItem.name} href={navItem.link}>
           <Typography letterSpacing="1px" color="secondary">
             {navItem.name}
           </Typography>

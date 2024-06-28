@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeRegistry } from "./components/ThemeRegistry/ThemeRegistry";
-import { NavBar } from "./components/NavBar/Navbar";
-import { Footer } from "./components/Footer/Footer";
-import { Grid, Stack, Toolbar } from "@mui/material";
-import { Hero } from "./components/Hero/Hero";
-import { url } from "inspector";
+import { Grid } from "@mui/material";
+import { VerticleHero } from "./components/Hero/VerticleHero";
 
 export const metadata: Metadata = {
   title: "Louissaint Portfolio",
-  description: "C Louissaint Portfolio",
+  description: "Celina Louissaint Web Developer Portfolio",
 };
 
 export default function RootLayout(props: { children: any }) {
@@ -18,14 +15,14 @@ export default function RootLayout(props: { children: any }) {
     <html lang="en">
       <ThemeRegistry options={{ key: "mui" }}>
         <body>
-            <Grid container px={15}>
-              <Grid item md={5} sm={12}
+            <Grid container px={2}>
+              <Grid item md={6} sm={12}
               >
-                <Hero />
+                <VerticleHero />
               </Grid>
               <Grid
                 item
-                md={7}
+                md={6}
                 sm={12}
                 sx={{
                   height:"100vh",

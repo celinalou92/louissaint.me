@@ -1,12 +1,6 @@
 import { Project } from "@/types/Project";
 import {
-  Grid,
-  Card,
-  CardMedia,
-  CardContent,
   Typography,
-  CardActions,
-  Button,
   Container,
   Divider,
   Box,
@@ -17,7 +11,7 @@ export const Projects = ({ projects }: { projects: Array<Project> }) => {
   return (
     <Box id="projects">
       <Container sx={{ py: 8 }} maxWidth="xl">
-        <Typography sx={{ letterSpacing: ".2rem", borderBottom: "1px solid #D6A23A" }} variant="h3" align="left" color="text.primary" mb=".5rem">
+        <Typography sx={{ letterSpacing: ".2rem", borderBottom: ".5px solid #D6A23A" }} variant="h4" align="center" color="text.primary" mb=".5rem">
           Portfolio
         </Typography>
         <Divider />
