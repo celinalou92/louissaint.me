@@ -1,7 +1,7 @@
+import { Project } from "@/types/Project"
 import { Button } from "@mui/material"
 
-export const getButtons = (project) => {
-    console.log(project)
+export const getButtons = (project: Project) => {
     {
         return project.name != "Amanda Lynn Photography" ? (
             <>

@@ -16,8 +16,8 @@ export const projectData = [
         description: "A Social Media Full Stack Application",
         description2: "HTML, CSS, Typescript, Node.js, Express, React, MongoDB, GraphQL",
         links: [
-            "https://github.com/celinalou92/buddie",
-            "https://buddie-inky.vercel.app/"
+            "https://github.com/celinalou92/buddie2.0",
+            "https://buddie2-0.vercel.app/"
         ],
         image: buddie.src,
         featured: true

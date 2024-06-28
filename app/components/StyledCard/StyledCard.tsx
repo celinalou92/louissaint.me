@@ -7,14 +7,18 @@ import {
   Button,
 } from "@mui/material";
 
+import React, { ReactNode } from "react";
+
 export default function StyledCard({
-  //@ts-ignore
-  contentHeader,
-  //@ts-ignore
+  contentHeader, 
   contentText,
-  //@ts-ignore
   cardMedia,
   buttons,
+}: {
+  contentHeader: string,
+  contentText: string[],
+  cardMedia: string,
+  buttons: ReactNode[],
 }) {
   return (
     <Card

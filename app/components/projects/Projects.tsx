@@ -1,7 +1,7 @@
 import { Project } from "@/types/Project";
 import { Typography, Stack } from "@mui/material";
 import StyledCard from "../StyledCard/StyledCard";
-import {getButtons} from "../Buttons/Buttons";
+import { getButtons } from "../Buttons/Buttons";
 
 export const Projects = ({ projects }: { projects: Array<Project> }) => {
   return (
@@ -18,28 +18,32 @@ export const Projects = ({ projects }: { projects: Array<Project> }) => {
           lineHeight="1.6"
           gutterBottom
           textAlign="center"
+
+          paddingY={"4%"}
         >
           Portfolio
         </Typography>
         <Stack
-          padding="10% 0"
+          
+          paddingY={"10%"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"center"}
         >
           {projects.map((project: Project) => {
-            const buttons = getButtons(project)
+            const buttons = [getButtons(project)]; // Wrap buttons in an array
             return (
-              <>
+              <Stack key={project.name} sx={{marginBottom:"40%"}}>
                 <StyledCard
-                  key={project.name}
                   contentHeader={project.name}
-                  contentText={[project.description, project.description2]}
+                  contentText={[
+                    project.description ?? "",
+                    project.description2 ?? "",
+                  ]}
                   cardMedia={`${project.image}`}
                   buttons={buttons}
                 />
-                <br />
-              </>
+              </Stack>
             );
           })}
         </Stack>

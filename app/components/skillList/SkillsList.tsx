@@ -39,6 +39,7 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
           justifyContent="space-between"
           spacing={2}
           rowGap={5}
+          paddingY={"10%"}
         >
           <Grid
             item
