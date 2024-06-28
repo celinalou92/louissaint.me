@@ -116,7 +116,7 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
           >
             <Typography
               gutterBottom
-              variant="h5"
+              variant="h6"
               sx={{
                 borderBottom: ".5px solid #D6A23A",
               }}
