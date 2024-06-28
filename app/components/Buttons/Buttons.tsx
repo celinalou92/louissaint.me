@@ -1,6 +1,7 @@
 import { Button } from "@mui/material"
 
-const getButtons = () => {
+export const getButtons = (project) => {
+    console.log(project)
     {
         return project.name != "Amanda Lynn Photography" ? (
             <>
@@ -11,8 +12,7 @@ const getButtons = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                
-
+                    See Github
                 </Button>
                 <Button
                     target="_blank"

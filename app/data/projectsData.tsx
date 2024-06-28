@@ -36,7 +36,7 @@ export const projectData = [
     {
         name: "Amanda Lynn Photography",
         description: "A portfolio website for a photography and videography business. ",
-        description2: "Redesigned and developed client’s website with custom CSS modules and ensured mobile responsiveness.Live site no longer available, please see the clips from the client demo.",
+        description2: "Redesigned and developed client’s website with custom CSS modules and ensured mobile responsiveness. Clips from the client demo below.",
         links: [
             "https://vimeo.com/941462996?share=copy"
         ],
