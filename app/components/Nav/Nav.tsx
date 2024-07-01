@@ -1,23 +1,23 @@
 import { Stack, Typography } from "@mui/material";
 import Link from "next/link";
 import { Contact } from "../Contact/Contact";
+import { useState } from "react";
 
-export const NavBar = () => {
+export const NavBar = ({matches}: {matches: boolean}) => {
   const navItems = [
     { name: "About", link: "/#about" },
     { name: "Skills", link: "/#skills" },
-    { name: "Portfolio", link: "/#projects" },
+    { name: "Portfolio", link: "/#projects" }
   ];
-
   return (
-    <Stack 
-    padding={"1rem"}
-    sx={(theme) => ({
-      [theme.breakpoints.down('md')]: { 
-        display: "flex",
-        flexDirection: "row",
-      },
-    })}
+    <Stack
+      paddingLeft={"1rem"}
+      sx={(theme) => ({
+        [theme.breakpoints.down("md")]: {
+          display: "flex",
+          flexDirection: "row",
+        },
+      })}
     >
       {navItems.map((navItem) => (
         <Link
@@ -30,7 +30,7 @@ export const NavBar = () => {
           </Typography>
         </Link>
       ))}
-       <Contact/>
+      {!matches && <Contact />}
     </Stack>
   );
 };

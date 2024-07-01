@@ -121,15 +121,11 @@ a:active {
 }
 
 /* Tablet and Smaller Desktop */
-@media (max-width: 1120px) {
+@media (max-width: 900px) {
   .mobileLayout {
     display: flex;
     justify-content: center;
     width: 100%;
-  }
-
-  .mobileContact {
-    display: none;
   }
 
   .mobileNavItem {

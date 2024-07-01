@@ -22,16 +22,15 @@ export const Contact = () => {
       icon: <LinkedInIcon fontSize="small" color="secondary" />,
     },
   ];
+
+  const mobileContactStyles = {
+    display: "flex",
+    justifyContent: "center",
+  };
+
   return (
-    <Stack
-      className="hover mobileNavItem"
-      sx={(theme) => ({
-        [theme.breakpoints.down("md")]: {
-          display: "none",
-        },
-      })}
-    >
-      <Typography variant="h6">Contact</Typography>
+    <Stack className="hover">
+      <Typography variant="h6">Contact:</Typography>
       {contactData.map((contact) => (
         <Stack
           key={contact.linkText}
@@ -39,6 +38,10 @@ export const Contact = () => {
           flexDirection="row"
           alignItems="center"
           paddingBottom="3px"
+          sx={(theme) => ({
+            mobileContactStyles,
+            [theme.breakpoints.down("md")]: mobileContactStyles,
+          })}
         >
           {contact.icon}
           <Link

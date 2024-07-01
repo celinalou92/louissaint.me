@@ -1,8 +1,11 @@
 "use client";
-import { Typography, Stack } from "@mui/material";
+import { Typography, Stack, useMediaQuery } from "@mui/material";
 import { NavBar } from "../Nav/Nav";
+import { Contact } from "../Contact/Contact";
 
 export const Hero = () => {
+  const matches = useMediaQuery("(max-width: 900px)");
+
   return (
     <Stack
       className="hero"
@@ -21,6 +24,7 @@ export const Hero = () => {
         },
       })}
     >
+        {matches && <Contact />}
       <Stack>
         <Typography
           variant="h2"
@@ -49,8 +53,8 @@ export const Hero = () => {
             height: "100%",
           }}
         >
-          I am a Long Beach based Web Developer with a passion for learning new
-          and emerging technologies.
+          I am a Long Beach based Web Developer with a passion for web design
+          and development, learning new technologies and Mexican food.
         </Typography>
       </Stack>
       <Stack
@@ -70,7 +74,7 @@ export const Hero = () => {
           },
         })}
       >
-        <NavBar />
+        <NavBar matches={matches}/>
       </Stack>
     </Stack>
   );
