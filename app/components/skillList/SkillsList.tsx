@@ -15,7 +15,7 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
 
   return (
     <Stack
-      id="skils"
+      id="skills"
       height="100vh"
       display={"flex"}
       flexDirection={"column"}

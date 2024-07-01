@@ -53,8 +53,7 @@ export const Hero = () => {
             height: "100%",
           }}
         >
-          I am a Long Beach based Web Developer with a passion for web design
-          and development, learning new technologies and Mexican food.
+          I am a Long Beach based Web Developer with a passion for web design and development, learning new technologies and Mexican food.
         </Typography>
       </Stack>
       <Stack
