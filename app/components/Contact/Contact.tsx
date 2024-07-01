@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
@@ -23,9 +23,8 @@ export const Contact = () => {
     },
   ];
   return (
-    <Stack>
-      <br />
-      <Typography variant="h6">Contact Me:</Typography>
+    <Stack className="hover mobileNavItem">
+      <Typography variant="h6">Contact</Typography>
       {contactData.map((contact) => (
         <Stack
           key={contact.linkText}
@@ -33,6 +32,11 @@ export const Contact = () => {
           flexDirection="row"
           alignItems="center"
           paddingBottom="3px"
+          sx={(theme) => ({
+            [theme.breakpoints.down("md")]: {
+              display: "none",
+            },
+          })}
         >
           {contact.icon}
           <Link

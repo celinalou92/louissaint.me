@@ -26,7 +26,7 @@ export const AboutMe = () => {
         </Typography>
         <Typography
           padding="2rem 1.7rem"
-          variant="body1"
+          variant="h6"
           lineHeight="1.6"
           textAlign="center"
           paddingY={"10%"}

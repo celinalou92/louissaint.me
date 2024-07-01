@@ -94,8 +94,47 @@ a {
   text-decoration: none;
 }
 
+
+.hover h6:hover {
+  color: #FF7972;
+}
+
+a:active {
+  color: #FF7972;
+}
+
+.hover h6 {
+ color: #fff;
+}
+
+.hero {
+  position: fixed;
+  max-width: 522px;
+  left: 168px;
+  top: 229px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+
+/* Tablet and Smaller Desktop */
+@media (max-width: 1120px) {
+  .mobileLayout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mobileContact {
+    display: none;
+  }
+
+  .mobileNavItem {
+    padding-right: 1rem;
+  }
+}
+
+
