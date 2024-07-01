@@ -36,7 +36,7 @@ export const Hero = () => {
           }}
           gutterBottom
         >
-          Hi I'm Celina
+          Hi I&apos;m Celina
         </Typography>
         <Typography
           variant="h3"
