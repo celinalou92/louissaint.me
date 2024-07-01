@@ -1,7 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import Link from "next/link";
 import { Contact } from "../Contact/Contact";
-import { useState } from "react";
 
 export const NavBar = ({matches}: {matches: boolean}) => {
   const navItems = [
