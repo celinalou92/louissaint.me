@@ -23,7 +23,14 @@ export const Contact = () => {
     },
   ];
   return (
-    <Stack className="hover mobileNavItem">
+    <Stack
+      className="hover mobileNavItem"
+      sx={(theme) => ({
+        [theme.breakpoints.down("md")]: {
+          display: "none",
+        },
+      })}
+    >
       <Typography variant="h6">Contact</Typography>
       {contactData.map((contact) => (
         <Stack
@@ -32,11 +39,6 @@ export const Contact = () => {
           flexDirection="row"
           alignItems="center"
           paddingBottom="3px"
-          sx={(theme) => ({
-            [theme.breakpoints.down("md")]: {
-              display: "none",
-            },
-          })}
         >
           {contact.icon}
           <Link
