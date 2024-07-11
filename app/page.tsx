@@ -11,13 +11,10 @@ export default function Home() {
   });
 
   return (
-      <Stack 
-      overflow={"scroll"} 
-      alignContent={"center"}
-      >
-        <AboutMe />
-        <SkillList skillsListData={skillsListData} /> 
-        <Projects projects={featuredProjects} />
-      </Stack>
+    <Stack>
+      <AboutMe />
+      <SkillList skillsListData={skillsListData} />
+      <Projects projects={featuredProjects} />
+    </Stack>
   );
 }

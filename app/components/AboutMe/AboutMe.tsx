@@ -10,10 +10,7 @@ export const AboutMe = () => {
       alignItems={"center"}
       justifyContent={"center"}
     >
-      <Stack
-      maxWidth={"500px"}
-      maxHeight={"500px"}
-      >
+      <Stack>
         <Typography
           sx={{ letterSpacing: ".2rem", borderBottom: ".5px solid #D6A23A" }}
           variant="h3"
@@ -31,7 +28,12 @@ export const AboutMe = () => {
           textAlign="center"
           paddingY={"10%"}
         >
-         My experience includes building a web based e-commerce application for an enterprise business, a generative AI pilot application for a start up and several websites for local businesses. I specialize in Front-End Development with React, I have recently worked with Next.js, Typescript, and Java/Spring Boot. I am dedicated to ensuring efficient and collaborative project execution through agile methodologies.
+          My experience includes building a web based e-commerce application for
+          an enterprise business, a generative AI pilot application for a start
+          up and several websites for local businesses. I specialize in
+          Front-End Development with React, I have recently worked with Next.js,
+          Typescript, and Java/Spring Boot. I am dedicated to ensuring efficient
+          and collaborative project execution through agile methodologies.
         </Typography>
       </Stack>
     </Stack>

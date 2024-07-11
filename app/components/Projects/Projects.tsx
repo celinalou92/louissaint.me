@@ -11,7 +11,7 @@ export const Projects = ({ projects }: { projects: Array<Project> }) => {
       flexDirection={"column"}
       alignItems={"center"}
     >
-      <Stack width={"500px"} paddingTop={"20%"}>
+      <Stack width={"100%"} paddingTop={"20%"}>
         <Typography
           sx={{ letterSpacing: ".2rem", borderBottom: ".5px solid #D6A23A" }}
           variant="h3"

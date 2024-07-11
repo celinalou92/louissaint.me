@@ -8,23 +8,15 @@ export const Hero = () => {
 
   return (
     <Stack
-      className="hero"
-      maxWidth={"522px"}
-      position={"fixed"}
       sx={(theme) => ({
-        left: "168px",
-        top: "229px",
         [theme.breakpoints.down("md")]: {
-          position: "relative",
           justifyContent: "center",
           flexDirection: "column-reverse",
-          top: "15vh",
-          left: "0",
           textAlign: "center",
         },
       })}
     >
-        {matches && <Contact />}
+      {matches && <Contact />}
       <Stack>
         <Typography
           variant="h2"
@@ -53,28 +45,11 @@ export const Hero = () => {
             height: "100%",
           }}
         >
-          I am a Long Beach based Web Developer with a passion for web design and development, learning new technologies and Mexican food.
+          I am a Long Beach based Web Developer with a passion for web design
+          and development, learning new technologies and Mexican food.
         </Typography>
       </Stack>
-      <Stack
-        sx={(theme) => ({
-          paddingLeft: "15%",
-          [theme.breakpoints.down("md")]: {
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            padding: "unset",
-            borderBottom: ".5px solid #fff",
-            position: "fixed",
-            top: "1vh",
-            left: "0",
-            width: "100vw",
-          },
-        })}
-      >
-        <NavBar matches={matches}/>
-      </Stack>
+      <NavBar matches={matches} />
     </Stack>
   );
 };

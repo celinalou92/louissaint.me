@@ -10,11 +10,14 @@ export const NavBar = ({matches}: {matches: boolean}) => {
   ];
   return (
     <Stack
+    className="navBar"
       paddingLeft={"1rem"}
       sx={(theme) => ({
         [theme.breakpoints.down("md")]: {
           display: "flex",
           flexDirection: "row",
+          justifyContent: "center",
+          borderBottom: ".5px solid #fff",
         },
       })}
     >

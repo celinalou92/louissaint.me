@@ -16,12 +16,11 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
   return (
     <Stack
       id="skills"
-      height="100vh"
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}
     >
-      <Stack width={"500px"} maxHeight={"500px"} paddingTop={"20%"}>
+      <Stack paddingTop={"20%"}>
         <Typography
           sx={{ letterSpacing: ".2rem", borderBottom: ".5px solid #D6A23A" }}
           variant="h3"
