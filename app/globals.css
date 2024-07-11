@@ -108,15 +108,15 @@ a:active {
 
 
 .outer {
-  padding-left: 45%;
-  padding-right: 5%;
+  padding-left: 55%;
+  padding-right: 10%;
 }
 
 .asideContainer {
   position: fixed;
   top: 20%;
-  left: 5%;
-  width: 30%;
+  left: 10%;
+  width: 35%;
 }
 
 .sectionContainer {
