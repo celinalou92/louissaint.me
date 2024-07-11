@@ -9,6 +9,7 @@ export const AboutMe = () => {
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"center"}
+      className="sectionContainer"
     >
       <Stack>
         <Typography
@@ -17,7 +18,6 @@ export const AboutMe = () => {
           lineHeight="1.6"
           gutterBottom
           textAlign="center"
-          paddingY={"4%"}
         >
           About Me
         </Typography>

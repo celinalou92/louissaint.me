@@ -11,20 +11,17 @@ export const Projects = ({ projects }: { projects: Array<Project> }) => {
       flexDirection={"column"}
       alignItems={"center"}
     >
-      <Stack width={"100%"} paddingTop={"20%"}>
+      <Stack className="sectionContainer">
         <Typography
           sx={{ letterSpacing: ".2rem", borderBottom: ".5px solid #D6A23A" }}
           variant="h3"
           lineHeight="1.6"
           gutterBottom
           textAlign="center"
-
-          paddingY={"4%"}
         >
           Portfolio
         </Typography>
         <Stack
-          
           paddingY={"10%"}
           display={"flex"}
           flexDirection={"column"}
@@ -33,7 +30,7 @@ export const Projects = ({ projects }: { projects: Array<Project> }) => {
           {projects.map((project: Project) => {
             const buttons = [getButtons(project)]; // Wrap buttons in an array
             return (
-              <Stack key={project.name} sx={{marginBottom:"40%"}}>
+              <Stack key={project.name} sx={{ marginBottom: "40%" }}>
                 <StyledCard
                   contentHeader={project.name}
                   contentText={[

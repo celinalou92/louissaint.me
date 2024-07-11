@@ -19,8 +19,9 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}
+       className="sectionContainer"
     >
-      <Stack paddingTop={"20%"}>
+      <Stack>
         <Typography
           sx={{ letterSpacing: ".2rem", borderBottom: ".5px solid #D6A23A" }}
           variant="h3"

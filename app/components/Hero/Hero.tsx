@@ -12,7 +12,7 @@ export const Hero = () => {
         [theme.breakpoints.down("md")]: {
           justifyContent: "center",
           flexDirection: "column-reverse",
-          textAlign: "center",
+          textAlign: "center"
         },
       })}
     >
