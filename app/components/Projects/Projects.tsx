@@ -25,13 +25,16 @@ export const Projects = ({ projects }: { projects: Array<Project> }) => {
           paddingY={"10%"}
           display={"flex"}
           flexDirection={"column"}
+          justifyContent={"center"}
           alignItems={"center"}
+          rowGap={15}
+
         >
           {projects.map((project: Project) => {
             const buttons = [getButtons(project)]; // Wrap buttons in an array
-            return (
-              <Stack key={project.name} sx={{ marginBottom: "40%" }}>
+            return (            
                 <StyledCard
+                key={project.name}
                   contentHeader={project.name}
                   contentText={[
                     project.description ?? "",
@@ -40,7 +43,6 @@ export const Projects = ({ projects }: { projects: Array<Project> }) => {
                   cardMedia={`${project.image}`}
                   buttons={buttons}
                 />
-              </Stack>
             );
           })}
         </Stack>

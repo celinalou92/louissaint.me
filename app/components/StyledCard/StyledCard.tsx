@@ -1,50 +1,48 @@
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  Stack,
-  Button,
-} from "@mui/material";
+import { Card, CardMedia, CardContent, Typography, Stack } from "@mui/material";
 
 import React, { ReactNode } from "react";
 
 export default function StyledCard({
-  contentHeader, 
+  contentHeader,
   contentText,
   cardMedia,
   buttons,
 }: {
-  contentHeader: string,
-  contentText: string[],
-  cardMedia: string,
-  buttons: ReactNode[],
+  contentHeader: string;
+  contentText: string[];
+  cardMedia: string;
+  buttons: ReactNode[];
 }) {
   return (
     <Card
-      elevation={1}
+      elevation={2}
       sx={{
-        width: "422px",
-        border: "1px solid #FF7972",
-        borderRadius: "20px",
-        height: "550px",
+        width: "70%",
+        border: "1px solid #121216",
+        borderRadius: "15px",
+        textAlign: "center"
       }}
     >
       <CardMedia component="img" height="50%" image={cardMedia} />
+
       <CardContent
         sx={{
-          padding: "7%",
+          padding: "2% 0",
         }}
       >
-        <Stack height="190px"
-        overflow={"scroll"}>
-          <Typography gutterBottom variant="h6">
-            {contentHeader}
-          </Typography>
-          <Typography gutterBottom>{contentText[0]}</Typography>
-          <Typography>{contentText[1]}</Typography>
+        <Stack rowGap={3}>
+          <Stack sx={{ borderBottom: "1px solid #ff79725c" }}>
+            <Typography width={"100%"} gutterBottom variant="h5">
+              {contentHeader}
+            </Typography>
+          </Stack>
+          <Stack padding={"0 5%"}>
+            <Typography gutterBottom>{contentText[0]}</Typography>
+            <Typography variant="body2">{contentText[1]}</Typography>
+          </Stack>
         </Stack>
         <Stack
+          paddingY={4}
           flexDirection={"row"}
           justifyContent={"space-evenly"}
         >
