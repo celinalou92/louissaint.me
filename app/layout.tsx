@@ -15,7 +15,7 @@ export default function RootLayout(props: { children: any }) {
     <html lang="en">
       <ThemeRegistry options={{ key: "mui" }}>
         <body className="outer">
-          <Stack className="asideContainer">
+          <Stack id="home" className="asideContainer">
             <Hero />
           </Stack>
           <Stack>{children}</Stack>

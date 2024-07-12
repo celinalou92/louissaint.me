@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, useMediaQuery } from "@mui/material";
 import Link from "next/link";
 import { Contact } from "../Contact/Contact";
 
@@ -7,6 +7,7 @@ export const NavBar = () => {
     { name: "About", link: "/#about" },
     { name: "Skills", link: "/#skills" },
     { name: "Portfolio", link: "/#projects" },
+    { name: "Contact", link: "/#home" },
   ];
   return (
     <Stack
@@ -23,7 +24,8 @@ export const NavBar = () => {
     >
       {navItems.map((navItem) => (
         <Link
-          className="hover mobileNavItem"
+          id={`${navItem.name}-link`}
+          className="hover mobileNavItem navContact"
           key={navItem.name}
           href={navItem.link}
         >
