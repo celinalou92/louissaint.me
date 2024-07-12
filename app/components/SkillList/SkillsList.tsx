@@ -34,8 +34,8 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
         <Grid
           container
           display="flex"
-          flexDirection="row"
-          alignItems="flex-start"
+          flexDirection={{sm:"column", md:"row"}}
+          alignItems={{sm:"center", md:"center"}}
           justifyContent="space-between"
           spacing={2}
           rowGap={5}

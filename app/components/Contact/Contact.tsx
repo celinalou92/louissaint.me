@@ -30,14 +30,14 @@ export const Contact = () => {
 
   return (
     <Stack className="hover">
-      <Typography variant="h6">Contact:</Typography>
+      <Typography letterSpacing="1px" >Contact:</Typography>
       {contactData.map((contact) => (
         <Stack
           key={contact.linkText}
           display="flex"
           flexDirection="row"
           alignItems="center"
-          paddingBottom="3px"
+          padding={.5}
           sx={(theme) => ({
             mobileContactStyles,
             [theme.breakpoints.down("md")]: mobileContactStyles,

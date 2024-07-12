@@ -2,15 +2,15 @@ import { Stack, Typography } from "@mui/material";
 import Link from "next/link";
 import { Contact } from "../Contact/Contact";
 
-export const NavBar = ({matches}: {matches: boolean}) => {
+export const NavBar = () => {
   const navItems = [
     { name: "About", link: "/#about" },
     { name: "Skills", link: "/#skills" },
-    { name: "Portfolio", link: "/#projects" }
+    { name: "Portfolio", link: "/#projects" },
   ];
   return (
     <Stack
-    className="navBar"
+      className="navBar"
       paddingLeft={"1rem"}
       sx={(theme) => ({
         [theme.breakpoints.down("md")]: {
@@ -27,12 +27,21 @@ export const NavBar = ({matches}: {matches: boolean}) => {
           key={navItem.name}
           href={navItem.link}
         >
-          <Typography variant={"h6"} letterSpacing="1px" color="secondary">
-            {navItem.name}
-          </Typography>
+          <Stack padding={1}>
+            <Typography letterSpacing="1px">{navItem.name}</Typography>
+          </Stack>
         </Link>
       ))}
-      {!matches && <Contact />}
+      <Stack
+        padding={1}
+        sx={(theme) => ({
+          [theme.breakpoints.down("md")]: {
+            display: "none",
+          },
+        })}
+      >
+        <Contact />
+      </Stack>
     </Stack>
   );
 };

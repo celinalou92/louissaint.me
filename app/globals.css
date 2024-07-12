@@ -98,7 +98,8 @@ a {
   color: #FF7972;
 }
 
-a:active {
+
+a:hover {
   color: #FF7972;
 }
 

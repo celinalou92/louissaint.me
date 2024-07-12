@@ -18,7 +18,7 @@ export default function StyledCard({
       elevation={2}
       sx={{
         width: "70%",
-        border: "1px solid #121216",
+        border: "1px solid #ff79725c",
         borderRadius: "15px",
         textAlign: "center"
       }}
@@ -28,6 +28,7 @@ export default function StyledCard({
       <CardContent
         sx={{
           padding: "2% 0",
+          borderTop: "1px solid #ff79725c" 
         }}
       >
         <Stack rowGap={3}>

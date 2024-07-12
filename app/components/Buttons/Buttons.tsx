@@ -11,6 +11,9 @@ export const getButtons = (project: Project) => {
                     color="secondary"
                     target="_blank"
                     rel="noreferrer"
+                    sx={{
+                        padding: ".5rem 1rem"
+                    }}
                 >
                     See Github
                 </Button>
@@ -18,6 +21,9 @@ export const getButtons = (project: Project) => {
                     target="_blank"
                     rel="noreferrer"
                     variant="outlined"
+                    sx={{
+                        padding: ".5rem 1rem"
+                    }}
                     href={project.links[1]}
                     color="secondary">
                     See Live Site
@@ -30,6 +36,9 @@ export const getButtons = (project: Project) => {
                 variant="outlined"
                 href={project.links[0]}
                 color="secondary"
+                sx={{
+                    padding: ".5rem 1rem"
+                }}
             >
                 See Demo on Vimeo
             </Button>
