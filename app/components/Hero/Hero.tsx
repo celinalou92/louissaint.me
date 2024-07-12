@@ -49,7 +49,7 @@ export const Hero = () => {
           and development, learning new technologies and Mexican food.
         </Typography>
       </Stack>
-      <NavBar matches={matches} />
+      <NavBar />
     </Stack>
   );
 };
