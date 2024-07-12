@@ -20,7 +20,7 @@ export default function StyledCard({
         width: "70%",
         border: "1px solid #ff79725c",
         borderRadius: "15px",
-        textAlign: "center"
+        textAlign: "center",
       }}
     >
       <CardMedia component="img" height="50%" image={cardMedia} />
@@ -28,7 +28,7 @@ export default function StyledCard({
       <CardContent
         sx={{
           padding: "2% 0",
-          borderTop: "1px solid #ff79725c" 
+          borderTop: "1px solid #ff79725c",
         }}
       >
         <Stack rowGap={3}>
