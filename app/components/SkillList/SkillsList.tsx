@@ -19,7 +19,7 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}
-       className="sectionContainer"
+      className="sectionContainer"
     >
       <Stack>
         <Typography
@@ -34,8 +34,8 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
         <Grid
           container
           display="flex"
-          flexDirection={{sm:"column", md:"row"}}
-          alignItems={{sm:"center", md:"center"}}
+          flexDirection={{ sm: "column", md: "row" }}
+          alignItems={{ sm: "center", md: "center" }}
           justifyContent="space-between"
           spacing={2}
           rowGap={5}
@@ -68,7 +68,6 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
             display="flex"
             flexDirection="column"
             width={"230px"}
-            maxHeight={"180px"}
           >
             <Typography
               gutterBottom
@@ -90,7 +89,6 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
             display="flex"
             flexDirection="column"
             width={"230px"}
-            height={"180px"}
           >
             <Typography
               gutterBottom
@@ -112,7 +110,6 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
             display="flex"
             flexDirection="column"
             width={"230px"}
-            height={"180px"}
           >
             <Typography
               gutterBottom
@@ -134,7 +131,6 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
             display="flex"
             flexDirection="column"
             width={"230px"}
-            height={"180px"}
           >
             <Typography
               gutterBottom

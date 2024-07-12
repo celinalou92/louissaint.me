@@ -127,7 +127,7 @@ a:hover {
   position: fixed;
   top: 20%;
   left: 10%;
-  width: 35%;
+  width: 40%;
 }
 
 .sectionContainer {
@@ -154,9 +154,13 @@ a:hover {
 /* Tablet and Smaller Desktop */
 @media (max-width: 900px) {
   .outer{
-    padding: 20% 10%;
+    padding: 30% 10%;
   }
   
+  #about{
+    margin: 30% 0;
+  }
+
   .asideContainer {
     position: static;
     width: 100%;
