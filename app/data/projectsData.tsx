@@ -38,7 +38,7 @@ export const projectData = [
         description: "A portfolio website for a photography and videography business. ",
         description2: "Redesigned and developed client’s website with custom CSS modules and ensured mobile responsiveness. Clips from the client demo below.",
         links: [
-            "https://vimeo.com/941462996?share=copy"
+            "https://vimeo.com/941462940"
         ],
         image: alphoto.src,
         featured: true
