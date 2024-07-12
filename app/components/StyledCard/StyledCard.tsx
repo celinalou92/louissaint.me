@@ -33,7 +33,7 @@ export default function StyledCard({
       >
         <Stack rowGap={3}>
           <Stack sx={{ borderBottom: "1px solid #ff79725c" }}>
-            <Typography width={"100%"} gutterBottom variant="h5">
+            <Typography textTransform={"uppercase"} width={"100%"} gutterBottom variant="body1">
               {contentHeader}
             </Typography>
           </Stack>
