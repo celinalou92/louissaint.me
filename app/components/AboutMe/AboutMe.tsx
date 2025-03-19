@@ -1,10 +1,10 @@
-import { Container, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 
 export const AboutMe = () => {
   return (
     <Stack
       id="about"
-      height="100vh"
+      height={{sm: "60vh", md:"100vh"}}
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}
@@ -14,7 +14,7 @@ export const AboutMe = () => {
       <Stack>
         <Typography
           sx={{ letterSpacing: ".2rem", borderBottom: ".5px solid #D6A23A" }}
-          variant="h3"
+          variant="h4"
           lineHeight="1.6"
           gutterBottom
           textAlign="center"
@@ -22,18 +22,15 @@ export const AboutMe = () => {
           About Me
         </Typography>
         <Typography
+          sx={{ letterSpacing: ".06rem"}} 
           padding="2rem 1.7rem"
-          variant="h6"
-          lineHeight="1.6"
-          textAlign="center"
+          fontSize={"1rem"}
+          textAlign="justify"
           paddingY={"10%"}
         >
-          My experience includes building a web based e-commerce application for
-          an enterprise business, a generative AI pilot application for a start
-          up and several websites for local businesses. I specialize in
-          Front-End Development with React, I have recently worked with Next.js,
-          Typescript, and Java/Spring Boot. I am dedicated to ensuring efficient
-          and collaborative project execution through agile methodologies.
+          I have three years of experience building web applications for startups, enterprise clients, and local businesses. I’ve worked on everything from e-commerce platforms to generative AI apps using <strong>React</strong>, <strong>Next.js</strong>, <strong>Java/Spring Boot</strong>, and <strong>TypeScript</strong>.
+
+          Lately, I’ve been diving deeper into backend development and learning <strong>Python</strong>. I’ve built AI-powered tools like a voice-to-text app and a RAG-based news application, and I’m especially interested in prompt engineering and building systems that solve real problems.   
         </Typography>
       </Stack>
     </Stack>

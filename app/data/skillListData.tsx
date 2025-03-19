@@ -1,5 +1,3 @@
-import bootstrapShield from "@/public/icons/bootstrapShield.png";
-// import javascriptShield from "@/public/icons/javascriptShield.png";
 import Skills from "@/types/Skills";
 import illustratorLogo from '@/public/icons/illustratorLogo.png';
 import inDesignLogo from '@/public/icons/inDesignLogo.png';
@@ -9,89 +7,41 @@ import premeireProLogo from '@/public/icons/premeireProLogo.png';
 export const skillsListData: Skills = {
     dev: {
         certifications: [
-           {
-            name:  "AWS Certified Cloud Practitioner",
-            star: 5
-           }
+          { name: "AWS Certified Cloud Practitioner" }
         ],
         programming_languages: [
-            {
-                name: "HTML",
-                // image: htmlShield,
-                star: 5
-            },
-            {
-                name: "CSS",
-                // image: cssShield,
-                star: 4
-            },
-            {
-                name: "JavaScript",
-                // image: javascriptShield,
-                star: 4
-            },
-            {
-                name: "Java/SpringBoot",
-                // image: bootstrapShield,
-                star: 2
-            },
+          { name: "HTML" },
+          { name: "CSS" },
+          { name: "JavaScript" },
+          { name: "TypeScript" },
+          { name: "Java" },
+          { name: "Python" }
         ],
         frameworks_libraries: [
-            {
-                name: "React.js",
-                // image: bootstrapShield,
-                star: 4
-            },
-            {
-                name: "Next.js",
-                // image: bootstrapShield,
-                star: 4
-            },
-            {
-                name: "Node",
-                // image: bootstrapShield,
-                star: 4
-            },
-            {
-                name: "Express",
-                // image: bootstrapShield,
-                star: 4
-            },
-            {
-                name: "Typescript",
-                // image: bootstrapShield,
-                star: 4
-            },
+          { name: "React.js" },
+          { name: "Next.js" },
+          { name: "Node.js" },
+          { name: "Express" },
+          { name: "Spring Boot" },
+          { name: "GraphQL" }
         ],
         testing: [
-            {
-                name: "Jest"
-            },
-            {
-                name: "React Testing Library"
-            },
-            {
-                name: "JUnit"
-            },
-            {
-                name: "Mockito"
-            },
+          { name: "Jest" },
+          { name: "React Testing Library" },
+          { name: "JUnit" },
+          { name: "Mockito" }
         ],
         methodologies: [
-            {
-                name: "Agile"
-            },
-            {
-                name: "Kanban"
-            },
-            {
-                name: "CI /CD"
-            },
-            {
-                name: "TDD"
-            },
+          { name: "Agile" },
+          { name: "Kanban" },
+          { name: "CI/CD" },
+          { name: "TDD" }
+        ],
+        tools_platforms: [
+          { name: "Docker" },
+          { name: "Google Cloud Platform (GCP)" }
         ]
-    },
+      },
     adobe: [
         {
             name: "Photoshop",

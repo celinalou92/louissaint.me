@@ -6,7 +6,7 @@ import { Hero } from "./components/Hero/Hero";
 
 export const metadata: Metadata = {
   title: "Louissaint Portfolio",
-  description: "Celina Louissaint Web Developer Portfolio",
+  description: "Celina Louissaint Full Stack Developer Portfolio",
 };
 
 export default function RootLayout(props: { children: any }) {
@@ -18,7 +18,7 @@ export default function RootLayout(props: { children: any }) {
           <Stack id="home" className="asideContainer">
             <Hero />
           </Stack>
-          <Stack>{children}</Stack>
+          <Stack paddingBottom={"12rem"}>{children}</Stack>
         </body>
       </ThemeRegistry>
     </html>

@@ -14,7 +14,7 @@ export const Projects = ({ projects }: { projects: Array<Project> }) => {
       <Stack className="sectionContainer">
         <Typography
           sx={{ letterSpacing: ".2rem", borderBottom: ".5px solid #D6A23A" }}
-          variant="h3"
+          variant="h4"
           lineHeight="1.6"
           gutterBottom
           textAlign="center"

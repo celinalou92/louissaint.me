@@ -25,11 +25,11 @@ export const Contact = () => {
 
   const mobileContactStyles = {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "center"
   };
 
   return (
-    <Stack className="hover">
+    <Stack className="hover" paddingTop={{md:"2rem"}}>
       <Typography letterSpacing="1px" >Contact:</Typography>
       {contactData.map((contact) => (
         <Stack

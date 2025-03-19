@@ -7,7 +7,8 @@ export interface Skills {
       programming_languages: Skill[],
       frameworks_libraries: Skill[]
       testing: Skill[],
-      methodologies: Skill[]
+      methodologies: Skill[],
+      tools_platforms: Skill[]
     };
     adobe: Skill[];
     business: Skill[]

@@ -1,6 +1,5 @@
 import { Merriweather } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
-import mangoWhite from "@/public/mango-matrix-white.png";
 
 
 const merriweather = Merriweather({
@@ -26,7 +25,7 @@ let theme = createTheme({
     },
     divider: "#1C1C1D",
     text: {
-      primary: "#fff",
+      primary: "rgb(245, 242, 235)",
       //peach
       secondary: "#FF7972"
     },
@@ -38,7 +37,17 @@ let theme = createTheme({
   },
   typography: {
     fontFamily: "merriweather",
-  }
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          background: "linear-gradient(135deg, #1C1C1D 0%, #232324 85%, #2A2A2B 98%, #302F35 100%)",
+          minHeight: "100vh",
+        },
+      },
+    },
+  },
 });
 
 
