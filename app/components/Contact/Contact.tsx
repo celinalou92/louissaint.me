@@ -2,6 +2,7 @@ import { Stack, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import Link from "next/link";
 
 export const Contact = () => {
@@ -21,6 +22,11 @@ export const Contact = () => {
       link: "https://linkedin.com/in/louissaint-c",
       icon: <LinkedInIcon fontSize="small" color="secondary" />,
     },
+    {
+      linkText: "view my resume",
+      link: "https://drive.google.com/file/d/1ldJd63tsr9FDYIV-AVEjjwSXzxPl6g_Y/view?usp=sharing",
+      icon: <InsertDriveFileIcon fontSize="small" color="secondary" />,
+    }
   ];
 
   const mobileContactStyles = {
