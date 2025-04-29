@@ -24,7 +24,7 @@ export const Contact = () => {
     },
     {
       linkText: "view my resume",
-      link: "https://drive.google.com/file/d/1ldJd63tsr9FDYIV-AVEjjwSXzxPl6g_Y/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1-mXSFp3SuEi9hoDyDvuOtw3Qxg9GrMwH/view?usp=sharing",
       icon: <InsertDriveFileIcon fontSize="small" color="secondary" />,
     }
   ];
