@@ -31,7 +31,7 @@ export const projectData = [
             "https://vibinbeadsbybb.louissaint.me/"
         ],
         image: vibbinbeads.src,
-        featured: true
+        featured: false
     },
     {
         name: "Amanda Lynn Photography",
@@ -41,7 +41,7 @@ export const projectData = [
             "https://vimeo.com/941462940"
         ],
         image: alphoto.src,
-        featured: true
+        featured: false
     },
     {
         name: "Manage-It",
