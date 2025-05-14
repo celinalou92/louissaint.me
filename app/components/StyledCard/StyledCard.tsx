@@ -1,12 +1,3 @@
-import { 
-  Card, 
-  CardMedia, 
-  CardContent, 
-  Typography,
-  Box,
-  Divider,
-  CardActions
-} from "@mui/material";
 import React, { ReactNode } from "react";
 
 interface StyledCardProps {
@@ -17,131 +8,59 @@ interface StyledCardProps {
   tags?: string[];
 }
 
-export default function StyledCard({
+const StyledCard = ({
   contentHeader,
   contentText,
   cardMedia,
   buttons,
-  tags = []
-}: StyledCardProps) {
+  tags = [],
+}: StyledCardProps) => {
   return (
-    <Card
-      elevation={3}
-      sx={{
-        width: { xs: "100%", sm: "85%" },
-        maxWidth: "800px",
-        border: "1px solid #ff79725c",
-        borderRadius: "15px",
-        transition: "transform 0.3s, box-shadow 0.3s",
-        overflow: "hidden",
-        "&:hover": {
-          transform: "translateY(-8px)",
-          boxShadow: "0 12px 20px rgba(0, 0, 0, 0.1)"
-        }
-      }}
-    >
-      <CardMedia 
-        component="img" 
-        image={cardMedia}
+    <div className="w-full max-w-3xl border border-[#ff79725c] rounded-xl overflow-hidden shadow transition-all duration-300 hover:-translate-y-2 hover:shadow-lg bg-[#1C1C1D]">
+      <img
+        src={cardMedia}
         alt={contentHeader}
-        sx={{
-          height: { xs: 200, sm: 250, md: 300 },
-          objectFit: "cover",
-          objectPosition: "center"
-        }}
+        className="w-full h-52 sm:h-64 md:h-72 object-cover object-center"
       />
-      <CardContent
-        sx={{
-          padding: { xs: "16px 12px", sm: "24px 16px" },
-          borderTop: "1px solid #ff79725c",
-        }}
-      >
-        <Box 
-          sx={{ 
-            pb: 2,
-            mb: 2,
-            borderBottom: "1px solid #ff79725c" 
-          }}
-        >
-          <Typography 
-            textTransform="uppercase"
-            variant="h6" 
-            fontWeight="medium"
-            align="center"
-          >
+
+      <div className="p-4 sm:p-6 border-t border-[#ff79725c]">
+        <div className="pb-4 mb-4 border-b border-[#ff79725c]">
+          <h3 className="text-center text-lg font-medium uppercase text-[#f5f2eb]">
             {contentHeader}
-          </Typography>
+          </h3>
+
           {tags.length > 0 && (
-            <Box 
-              sx={{ 
-                display: "flex", 
-                flexWrap: "wrap", 
-                gap: 1, 
-                justifyContent: "center",
-                mt: 1.5
-              }}
-            >
+            <div className="flex flex-wrap justify-center gap-2 mt-3">
               {tags.map((tag, index) => (
-                <Box 
+                <span
                   key={index}
-                  sx={{
-                    bgcolor: "rgba(255, 121, 114, 0.1)",
-                    color: "#ff7972",
-                    fontSize: "0.75rem",
-                    px: 1.5,
-                    py: 0.5,
-                    borderRadius: "12px",
-                  }}
+                  className="bg-[#ff797214] text-[#FF7972] text-xs px-3 py-1 rounded-full"
                 >
                   {tag}
-                </Box>
+                </span>
               ))}
-            </Box>
+            </div>
           )}
-        </Box>
-        <Box sx={{ px: { xs: "3%", sm: "5%" }, mb: 3 }}>
-          <Typography 
-            variant="body1" 
-            gutterBottom
-            sx={{ lineHeight: 1.6 }}
-          >
-            {contentText[0]}
-          </Typography>
-          
+        </div>
+
+        <div className="px-[3%] sm:px-[5%] mb-6">
+          <p className="text-sm text-[#f5f2eb] leading-relaxed">{contentText[0]}</p>
+
           {contentText.length > 1 && (
-            <Typography 
-              variant="body2" 
-              color="text.secondary"
-              sx={{ mt: 1.5 }}
-            >
-              {contentText[1]}
-            </Typography>
+            <p className="text-xs text-[#cccccc] mt-4">{contentText[1]}</p>
           )}
-        </Box>
-        <Divider sx={{ mb: 2, mx: 2 }} />
-        <CardActions 
-          sx={{
-            display: "flex",
-            flexDirection: { xs: "column", sm: "row" },
-            justifyContent: "center",
-            gap: 2,
-            px: 2,
-            py: 1
-          }}
-        >
+        </div>
+
+        <div className="border-t border-[#ff79725c] pt-4 px-4 flex flex-col sm:flex-row gap-4 justify-center">
           {buttons.map((button, index) => (
-            <Box key={index} 
-            display={"flex"}
-            flexDirection={"row"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-            width={"80%"}
-            >
+            <div key={index} className="flex justify-center w-full sm:w-auto">
               {button}
-            </Box>
+            </div>
           ))}
-        </CardActions>
-      </CardContent>
-    </Card>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default StyledCard;
