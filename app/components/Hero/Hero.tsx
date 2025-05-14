@@ -22,7 +22,7 @@ export const Hero = () => {
         paddingBottom={isMobile ? "1rem" : "2rem"} 
       >
         <Typography
-          variant={isMobile ? "h4" : "h3"}
+          variant="h4"
           color="text.primary"
           sx={{
             letterSpacing: ".2rem",
@@ -34,7 +34,7 @@ export const Hero = () => {
           Hi I&apos;m Celina
         </Typography>
         <Typography
-          variant= "h4"
+          variant= "h5"
           color="text.primary"
           sx={{ 
             letterSpacing: ".2rem", 

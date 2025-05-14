@@ -18,7 +18,7 @@ export default function RootLayout(props: { children: any }) {
           <Stack id="home" className="asideContainer">
             <Hero />
           </Stack>
-          <Stack paddingBottom={"12rem"}>{children}</Stack>
+          <Stack>{children}</Stack>
         </body>
       </ThemeRegistry>
     </html>

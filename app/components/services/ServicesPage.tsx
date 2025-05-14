@@ -46,7 +46,7 @@ const services: Service[] = [
 ];
 
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
-  <div className="bg-zinc-900 text-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition w-full max-w-md mx-auto">
+  <div className="bg-zinc-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition w-full max-w-md mx-auto">
     <h3 className="text-xl font-bold mb-2">{service.title}</h3>
     <p className="text-sm text-gray-300 mb-4">{service.description}</p>
     <ul className="list-disc list-inside text-sm text-gray-400 mb-4">
@@ -72,7 +72,7 @@ const ServicesPage: React.FC = () => {
           content="Explore backend, AI integration, and dashboard development services for startups and small teams."
         />
       </Head>
-      <main className="min-h-screen text-white px-6 py-12">
+      <main className="min-h-screen px-6 py-12">
         <section className="max-w-5xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 text-center">
             Freelance Services

@@ -1,8 +1,10 @@
-import { SkillList } from "./components/SkillList/SkillsList";
-import { Projects } from "./components/Projects/Projects";
+import { SkillList } from "./components/skillList/SkillsList";
+import { Projects } from "./components/projects/Projects";
 import projectData from "./data/projectsData";
 import { Stack } from "@mui/material";
-import { AboutMe } from "./components/AboutMe/AboutMe";
+import { AboutMe } from "./components/aboutMe/AboutMe";
+import ServicesPage from "./components/services/ServicesPage";
+import ProjectsPage from "./components/projects/Projects_temp"
 import { skillsListData } from "./data/skillListData";
 
 export default function Home() {
@@ -12,8 +14,10 @@ export default function Home() {
 
   return (
     <Stack spacing={5}>
-      <AboutMe />
-      <SkillList skillsListData={skillsListData} />
+      <ServicesPage/>
+      <ProjectsPage/>
+      {/* <AboutMe /> */}
+      {/* <SkillList skillsListData={skillsListData} /> */}
       <Projects projects={featuredProjects} />
     </Stack>
   );
