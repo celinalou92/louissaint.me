@@ -1,11 +1,12 @@
-import { SkillList } from "./components/skillList/SkillsList";
-import { Projects } from "./components/projects/Projects";
+import { SkillList } from "./components/List/SkillsList";
+import { Projects } from "./components/Portfolio/Projects";
 import projectData from "./data/projectsData";
 import { Stack } from "@mui/material";
-import { AboutMe } from "./components/aboutMe/AboutMe";
-import ServicesPage from "./components/services/ServicesPage";
-import ProjectsPage from "./components/projects/Projects_temp"
+import { AboutMe } from "./components/AboutMe/AboutMe";
 import { skillsListData } from "./data/skillListData";
+import ServicesPage from "./components/services/ServicesPage";
+import ProjectsPage from "./components/Projects/Projects_temp"
+
 
 export default function Home() {
   const featuredProjects = projectData.filter((projectData) => {
