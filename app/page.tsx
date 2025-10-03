@@ -1,8 +1,8 @@
-import { SkillList } from "./components/SkillList/SkillsList";
-import { Projects } from "./components/Projects/Projects";
+import { SkillList } from "./components/skillList/SkillsList";
+import { Projects } from "./components/projects/Projects";
 import projectData from "./data/projectsData";
 import { Stack } from "@mui/material";
-import { AboutMe } from "./components/AboutMe/AboutMe";
+import { AboutMe } from "./components/aboutMe/AboutMe";
 import { skillsListData } from "./data/skillListData";
 
 export default function Home() {
