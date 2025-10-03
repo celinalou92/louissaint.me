@@ -1,5 +1,5 @@
-import { SkillList } from "./components/SkillList/SkillsList";
-import { Projects } from "./components/Projects/Projects";
+import { SkillList } from "./components/List/SkillsList";
+import { Projects } from "./components/Portfolio/Projects";
 import projectData from "./data/projectsData";
 import { Stack } from "@mui/material";
 import { AboutMe } from "./components/aboutMe/AboutMe";
