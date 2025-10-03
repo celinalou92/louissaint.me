@@ -2,7 +2,7 @@ import { SkillList } from "./components/List/SkillsList";
 import { Projects } from "./components/Portfolio/Projects";
 import projectData from "./data/projectsData";
 import { Stack } from "@mui/material";
-import { AboutMe } from "./components/aboutMe/AboutMe";
+import { AboutMe } from "./components/Content/AboutMe";
 import { skillsListData } from "./data/skillListData";
 
 export default function Home() {
