@@ -35,7 +35,7 @@ export const NavBar = () => {
         </Link>
       ))}
       <Stack
-        padding={1}
+        // padding={1}
         sx={(theme) => ({
           [theme.breakpoints.down("md")]: {
             display: "none",

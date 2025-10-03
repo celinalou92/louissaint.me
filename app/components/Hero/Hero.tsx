@@ -2,6 +2,7 @@
 import { Typography, Stack, useMediaQuery } from "@mui/material";
 import { NavBar } from "../Nav/Nav";
 import { Contact } from "../Contact/Contact";
+import CTAButton from "../Buttons/CTAButton";
 
 export const Hero = () => {
   const isMobile = useMediaQuery("(max-width: 900px)");
@@ -57,6 +58,16 @@ export const Hero = () => {
         </Typography>
       </Stack>
       <NavBar />
+      <div className="text-center">
+          <p className="text-l font-semibold m-5">
+            Book a free 15-minute call — let’s talk through your idea.
+          </p>
+          <CTAButton 
+          path="https://calendly.com/YOUR-CALENDLY-LINK"
+          text="Book a Discovery Call"
+          />
+        </div>
     </Stack>
+    
   );
 };

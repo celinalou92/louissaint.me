@@ -42,10 +42,10 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
       alignItems="center"
       className="sectionContainer"
     >
-      <Box sx={{ width: "100%", maxWidth: 1200, px: 2 }}>
+      <Box sx={{ width: "80%", maxWidth: 1200, px: 2 }}>
         <Typography
           sx={{ letterSpacing: ".2rem", borderBottom: ".5px solid #D6A23A", mb: 4 }}
-          variant="h4"
+          variant="h5"
           lineHeight="1.6"
           gutterBottom
           textAlign="center"
@@ -54,38 +54,35 @@ export const SkillList = ({ skillsListData }: { skillsListData: Skills }) => {
         </Typography>
         <Grid
           container
-          spacing={4}
-          sx={{ py: 2 }}
+          spacing={2}
         >
           {skillCategories.map((category, index) => (
             <Grid 
               item 
-              xs={12} 
-              sm={6} 
+              xs={6} 
+              md={4} 
               key={index}
-              sx={{ mb: 2 }}
             >
               <Box
                 sx={{
-                  height: "100%",
-                  p: 2,
+                  p: 1,
                   borderRadius: 1
                 }}
               >
                 <Typography
                   gutterBottom
-                  variant="h6"
+                  variant="body1"
                   sx={{
                     borderBottom: ".5px solid #D6A23A",
-                    pb: 1,
+                    pb: .5,
                     mb: 2,
                   }}
                 >
                   {category.title}
                 </Typography>
-                <Stack spacing={1.5}>
+                <Stack spacing={.5}>
                   {category.skills.map((skill: Skill) => (
-                    <Typography key={skill.name} variant="body1">
+                    <Typography key={skill.name} variant="body2">
                       {skill.name}
                     </Typography>
                   ))}

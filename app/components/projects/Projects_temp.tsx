@@ -63,7 +63,7 @@ const projects = [
 const ProjectsPage = () => {
     return (
       <div className="min-h-screen px-4 py-12">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl mb-10 text-center">
             Projects
           </h1>

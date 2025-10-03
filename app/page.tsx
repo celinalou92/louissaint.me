@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <Stack spacing={5}>
       <ServicesPage/>
+      <SkillList skillsListData={skillsListData} />
       <ProjectsPage/>
       {/* <AboutMe /> */}
-      {/* <SkillList skillsListData={skillsListData} /> */}
       <Projects projects={featuredProjects} />
     </Stack>
   );
