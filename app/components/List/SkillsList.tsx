@@ -37,13 +37,13 @@ export const SkillList = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center pb-10 px-8 w-full"
+      className="items-center pb-10 px-8 w-full"
     >
-      <div className="max-w-xl">
-        <h2 className="text-center text-2xl tracking-widest border-b-[.5px] border-[#D6A23A] mb-8 font-bold">
+      <div className="max-w-3xl">
+        <h2 className="text-center text-2xl tracking-widest font-bold">
           My Skill Set
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4">
           {skillCategories.map((category, index) => (
             <div
               key={index}

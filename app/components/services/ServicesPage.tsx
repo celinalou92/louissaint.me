@@ -83,8 +83,8 @@ const experience: Service [] = [
 
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
   <div className="bg-zinc-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition w-full mx-auto">
-    <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-    <p className="text-sm text-gray-300 mb-4">{service.description}</p>
+    <h3 className="text-2xl font-bold mb-8 tracking-widest">{service.title}</h3>
+    <p className="text-sm text-gray-300 mb-5">{service.description}</p>
     <ul className="list-disc list-inside text-sm text-gray-400 mb-4 pt-4 border-t-[.5px] border-[#D6A23A]">
       {service.features.map((feature, idx) => (
         <li key={idx}>{feature}</li>
@@ -99,23 +99,12 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
 );
 
 const ServicesPage: React.FC = () => {
-  return (
-    <>
-      <Head>
-        <title>Services | Louissaint</title>
-        <meta
-          name="description"
-          content="Explore backend, AI integration, and dashboard development services for startups and small teams."
-        />
-      </Head>
-      <main className="md:min-h-screen">
-        <section className="max-w-xl mt-14 mx-auto">
-          <div className="text-center mb-10 md:mb-auto ">
-            <ServiceCard key={experience[0].title} service={experience[0]}/>
-          </div>
-        </section>
-      </main>
-    </>
+return (
+    <section className="mt-14 pb-10 px-8 w-full items-center" >
+      <div className="max-w-3xl  text-center mb-10 md:mb-auto ">
+        <ServiceCard key={experience[0].title} service={experience[0]}/>
+      </div>
+    </section>
   );
 };
 

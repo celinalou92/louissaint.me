@@ -17,7 +17,7 @@ export default function Home() {
       <ServicesPage/>
       <SkillList skillsListData={skillsListData} />
       <ProjectsPage/>
-      <Projects projects={featuredProjects} />
+      {/* <Projects projects={featuredProjects} /> */}
     </Stack>
   );
 }

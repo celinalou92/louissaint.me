@@ -62,12 +62,12 @@ const projects = [
 
 const ProjectsPage = () => {
     return (
-      <div className="min-h-screen px-4 py-12">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl mb-10 text-center">
+      <div id="projects" className="pb-10 px-8 w-full">
+        <div className="mx-auto">
+          <h1 className="text-2xl mb-10 text-center tracking-widest font-bold">
             Projects
           </h1>
-          <div className="grid gap-10 md:grid-cols-2">
+          <div className="grid gap-4 grid-cols-1 xl:grid-cols-2">
             {projects.map((project) => (
               <StyledCard
                 key={project.title}
