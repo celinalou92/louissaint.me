@@ -2,10 +2,9 @@ import { SkillList } from "./components/List/SkillsList";
 import { Projects } from "./components/Portfolio/Projects";
 import projectData from "./data/projectsData";
 import { Stack } from "@mui/material";
-import { AboutMe } from "./components/AboutMe/AboutMe";
 import { skillsListData } from "./data/skillListData";
 import ServicesPage from "./components/services/ServicesPage";
-import ProjectsPage from "./components/Projects/Projects_temp"
+import ProjectsPage from "./components/Portfolio/Projects_temp"
 
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <ServicesPage/>
       <SkillList skillsListData={skillsListData} />
       <ProjectsPage/>
-      {/* <AboutMe /> */}
       <Projects projects={featuredProjects} />
     </Stack>
   );
