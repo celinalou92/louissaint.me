@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import CTAButton from "../Buttons/CTAButton"
 
 type Service = {
   title: string;
@@ -109,9 +108,9 @@ const ServicesPage: React.FC = () => {
           content="Explore backend, AI integration, and dashboard development services for startups and small teams."
         />
       </Head>
-      <main className="min-h-screen pb-12">
+      <main className="md:min-h-screen">
         <section className="max-w-xl mt-14 mx-auto">
-          <div className="text-center">
+          <div className="text-center mb-10 md:mb-auto ">
             <ServiceCard key={experience[0].title} service={experience[0]}/>
           </div>
         </section>

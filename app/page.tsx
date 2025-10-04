@@ -13,7 +13,7 @@ export default function Home() {
   });
 
   return (
-    <Stack spacing={5}>
+    <Stack spacing={1}>
       <ServicesPage/>
       <SkillList skillsListData={skillsListData} />
       <ProjectsPage/>
