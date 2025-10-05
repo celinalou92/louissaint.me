@@ -62,21 +62,19 @@ const experience: Service [] = [
  {
     title: "Experience",
     description:
-      "I bring a mix of full-stack development experience and AI integration, with a focus on building web applications. My work includes refactoring and deploying Java/Spring Boot backends, delivering React/Next.js web applications and designing APIs. My professional experience includes building ecommerce applications for enterprise retail and heavy equipment industries and a start-up AI text and image generation application for the entertainment industry. I’ve delivered projects with features like custom components, Stripe payments integration, microservice data processing, automated testing and delivery pipeline development. Across Node.js, Python, and Java, I enjoy solving complex problems and making technology easier for people to use.",
+      "I bring a mix of experience in full-stack development and AI integration, with a focus on building web applications. My work includes refactoring and deploying Java/Spring Boot backends, delivering React/Next.js web applications and designing APIs. My professional experience includes building ecommerce applications for enterprise retail and heavy equipment industries and a start-up AI text and image generation application for the entertainment industry. I’ve delivered projects with features like custom components, Stripe payments integration, microservice data processing, automated testing and delivery pipeline development. Across Node.js, Python, and Java, I enjoy solving problems and making technology easier for people to use.",
       features: [
         "Text-to-image generation (OpenAI, Stability AI)",
         "Speaker diarization alignment",
         "OpenAI-powered transcription & summarization",
         "REST API development & integration",
-        "Spring Boot deployments",
         "Node.js, Python, or Java services",
         "React and Next.js applications",
         "Tailwind CSS styling",
         "Material UI (MUI)",
         "Custom UI components",
         "Unit, integration, contract, and end-to-end testing",
-        "CI/CD pipeline setup and optimization",
-        "AWS and GCP application deployments"
+        "CI/CD pipeline setup",
       ]
   }
 ]
